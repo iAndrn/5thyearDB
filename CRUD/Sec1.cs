@@ -21,8 +21,9 @@ namespace CRUD
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'cpe5thyearDataSet3.Sec1' table. You can move, or remove it, as needed.
-            this.sec1TableAdapter.Fill(this.cpe5thyearDataSet3.Sec1);
+            // TODO: This line of code loads data into the 'dataSetSec1.Sec1' table. You can move, or remove it, as needed.
+            this.sec1TableAdapter.Fill(this.dataSetSec1.Sec1);
+
 
             GetStudentsRecord();
         }
@@ -45,11 +46,13 @@ namespace CRUD
         {
             if (IsValid())
             {
-                SqlCommand cmd = new SqlCommand("INSERT INTO Sec1 VALUES (@FirstName, @LastName, @StudentNum)", conn);
+                SqlCommand cmd = new SqlCommand("INSERT INTO Sec1 VALUES (@FirstName, @LastName, @StudentNum, @emailAdd, @contactNum)", conn);
                 cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@FirstName", Fname.Text);
                 cmd.Parameters.AddWithValue("@LastName", Lname.Text);
                 cmd.Parameters.AddWithValue("@StudentNum", StudentNum.Text);
+                cmd.Parameters.AddWithValue("@emailAdd", emailAdd.Text);
+                cmd.Parameters.AddWithValue("@contactNum", contactNum.Text);
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 conn.Close();
@@ -124,6 +127,21 @@ namespace CRUD
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchTextFname_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           
+        }
+
+        private void StudentDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void contactNum_TextChanged(object sender, EventArgs e)
         {
 
         }

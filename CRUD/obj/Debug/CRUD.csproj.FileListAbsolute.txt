@@ -9,3 +9,4 @@ C:\Users\Andreian\source\repos\CRUD\CRUD\obj\Debug\CRUD.pdb
 C:\Users\Andreian\source\repos\CRUD\CRUD\obj\Debug\CRUD.Sec1.resources
 C:\Users\Andreian\source\repos\CRUD\CRUD\obj\Debug\CRUD.Login.resources
 C:\Users\Andreian\source\repos\CRUD\CRUD\obj\Debug\CRUD.changePass.resources
+C:\Users\Andreian\source\repos\CRUD\CRUD\obj\Debug\CRUD.Sec2.resources

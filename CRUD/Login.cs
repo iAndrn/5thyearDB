@@ -21,14 +21,18 @@ namespace CRUD
 
                 if (User.Text == "Sec1Admin")
                 {
-                    MessageBox.Show("Login Succesful", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Login Succesful Sec1Admin", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Sec1 mm = new Sec1();
                     this.Hide();
                     
                     mm.Show();
                 }
-                else if (User.Text == "Sec2Admin") { 
-                    MessageBox.Show("No Page Yet for Section 2", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else if (User.Text == "Sec2Admin") {
+                    MessageBox.Show("Login Succesful Sec2Admin", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Sec2 mm = new Sec2();
+                    this.Hide();
+
+                    mm.Show();
 
                 }
                 else if (User.Text == "Sec3Admin")
