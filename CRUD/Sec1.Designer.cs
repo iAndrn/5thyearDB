@@ -33,7 +33,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.StudentDataGridView = new System.Windows.Forms.DataGridView();
-            
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailAddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contactNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sec1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.cpe5thyearDataSetSec11 = new CRUD.Cpe5thyearDataSetSec1();
             this.sec1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,21 +64,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Mname = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.cpe5thyearDataSetSec11 = new CRUD.Cpe5thyearDataSetSec1();
-            this.sec1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.sec1TableAdapter1 = new CRUD.Cpe5thyearDataSetSec1TableAdapters.Sec1TableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.studentNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailAddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contactNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).BeginInit();
-            
-            ((System.ComponentModel.ISupportInitialize)(this.sec1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sec1BindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sec1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // StudentDataGridView
@@ -124,9 +122,67 @@
             this.StudentDataGridView.VirtualMode = true;
             this.StudentDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentDataGridView_CellClick);
             // 
-            // sec1BindingSource1
+            // idDataGridViewTextBoxColumn
             // 
-            
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            this.lastNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "MiddleName";
+            this.dataGridViewTextBoxColumn7.HeaderText = "MiddleName";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Visible = false;
+            // 
+            // studentNumDataGridViewTextBoxColumn
+            // 
+            this.studentNumDataGridViewTextBoxColumn.DataPropertyName = "StudentNum";
+            this.studentNumDataGridViewTextBoxColumn.HeaderText = "Student Number";
+            this.studentNumDataGridViewTextBoxColumn.Name = "studentNumDataGridViewTextBoxColumn";
+            this.studentNumDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // emailAddDataGridViewTextBoxColumn
+            // 
+            this.emailAddDataGridViewTextBoxColumn.DataPropertyName = "emailAdd";
+            this.emailAddDataGridViewTextBoxColumn.HeaderText = "emailAdd";
+            this.emailAddDataGridViewTextBoxColumn.Name = "emailAddDataGridViewTextBoxColumn";
+            this.emailAddDataGridViewTextBoxColumn.ReadOnly = true;
+            this.emailAddDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // contactNumDataGridViewTextBoxColumn
+            // 
+            this.contactNumDataGridViewTextBoxColumn.DataPropertyName = "contactNum";
+            this.contactNumDataGridViewTextBoxColumn.HeaderText = "contactNum";
+            this.contactNumDataGridViewTextBoxColumn.Name = "contactNumDataGridViewTextBoxColumn";
+            this.contactNumDataGridViewTextBoxColumn.ReadOnly = true;
+            this.contactNumDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // sec1BindingSource2
+            // 
+            this.sec1BindingSource2.DataMember = "Sec1";
+            this.sec1BindingSource2.DataSource = this.cpe5thyearDataSetSec11;
+            // 
+            // cpe5thyearDataSetSec11
+            // 
+            this.cpe5thyearDataSetSec11.DataSetName = "Cpe5thyearDataSetSec1";
+            this.cpe5thyearDataSetSec11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // sec1BindingSource
             // 
@@ -194,7 +250,7 @@
             // contactNum
             // 
             this.contactNum.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contactNum.Location = new System.Drawing.Point(201, 684);
+            this.contactNum.Location = new System.Drawing.Point(205, 664);
             this.contactNum.Name = "contactNum";
             this.contactNum.ReadOnly = true;
             this.contactNum.Size = new System.Drawing.Size(301, 31);
@@ -203,7 +259,7 @@
             // emailAdd
             // 
             this.emailAdd.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailAdd.Location = new System.Drawing.Point(201, 642);
+            this.emailAdd.Location = new System.Drawing.Point(205, 622);
             this.emailAdd.Name = "emailAdd";
             this.emailAdd.ReadOnly = true;
             this.emailAdd.Size = new System.Drawing.Size(301, 31);
@@ -212,7 +268,7 @@
             // studentNum
             // 
             this.studentNum.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentNum.Location = new System.Drawing.Point(201, 600);
+            this.studentNum.Location = new System.Drawing.Point(205, 580);
             this.studentNum.Name = "studentNum";
             this.studentNum.ReadOnly = true;
             this.studentNum.Size = new System.Drawing.Size(301, 31);
@@ -221,7 +277,7 @@
             // Lname
             // 
             this.Lname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lname.Location = new System.Drawing.Point(201, 516);
+            this.Lname.Location = new System.Drawing.Point(205, 496);
             this.Lname.Name = "Lname";
             this.Lname.ReadOnly = true;
             this.Lname.Size = new System.Drawing.Size(301, 31);
@@ -230,7 +286,7 @@
             // Fname
             // 
             this.Fname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Fname.Location = new System.Drawing.Point(201, 474);
+            this.Fname.Location = new System.Drawing.Point(205, 454);
             this.Fname.Name = "Fname";
             this.Fname.ReadOnly = true;
             this.Fname.Size = new System.Drawing.Size(301, 31);
@@ -261,7 +317,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(30, 693);
+            this.label9.Location = new System.Drawing.Point(34, 673);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(172, 22);
             this.label9.TabIndex = 36;
@@ -271,7 +327,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(63, 651);
+            this.label8.Location = new System.Drawing.Point(67, 631);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(139, 22);
             this.label8.TabIndex = 35;
@@ -281,7 +337,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(36, 609);
+            this.label7.Location = new System.Drawing.Point(40, 589);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(166, 22);
             this.label7.TabIndex = 34;
@@ -291,7 +347,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(90, 525);
+            this.label6.Location = new System.Drawing.Point(94, 505);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(112, 22);
             this.label6.TabIndex = 33;
@@ -301,7 +357,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(94, 483);
+            this.label5.Location = new System.Drawing.Point(98, 463);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 22);
             this.label5.TabIndex = 32;
@@ -321,7 +377,7 @@
             // Mname
             // 
             this.Mname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mname.Location = new System.Drawing.Point(201, 558);
+            this.Mname.Location = new System.Drawing.Point(205, 538);
             this.Mname.Name = "Mname";
             this.Mname.ReadOnly = true;
             this.Mname.Size = new System.Drawing.Size(301, 31);
@@ -331,84 +387,22 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(65, 567);
+            this.label12.Location = new System.Drawing.Point(69, 547);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(137, 22);
             this.label12.TabIndex = 44;
             this.label12.Text = "Middle Name:";
             // 
-            // cpe5thyearDataSetSec11
-            // 
-            this.cpe5thyearDataSetSec11.DataSetName = "Cpe5thyearDataSetSec1";
-            this.cpe5thyearDataSetSec11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sec1BindingSource2
-            // 
-            this.sec1BindingSource2.DataMember = "Sec1";
-            this.sec1BindingSource2.DataSource = this.cpe5thyearDataSetSec11;
-            // 
             // sec1TableAdapter1
             // 
             this.sec1TableAdapter1.ClearBeforeFill = true;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // firstNameDataGridViewTextBoxColumn
-            // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            this.lastNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "MiddleName";
-            this.dataGridViewTextBoxColumn7.HeaderText = "MiddleName";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Visible = false;
-            // 
-            // studentNumDataGridViewTextBoxColumn
-            // 
-            this.studentNumDataGridViewTextBoxColumn.DataPropertyName = "StudentNum";
-            this.studentNumDataGridViewTextBoxColumn.HeaderText = "Student Number";
-            this.studentNumDataGridViewTextBoxColumn.Name = "studentNumDataGridViewTextBoxColumn";
-            this.studentNumDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // emailAddDataGridViewTextBoxColumn
-            // 
-            this.emailAddDataGridViewTextBoxColumn.DataPropertyName = "emailAdd";
-            this.emailAddDataGridViewTextBoxColumn.HeaderText = "emailAdd";
-            this.emailAddDataGridViewTextBoxColumn.Name = "emailAddDataGridViewTextBoxColumn";
-            this.emailAddDataGridViewTextBoxColumn.ReadOnly = true;
-            this.emailAddDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // contactNumDataGridViewTextBoxColumn
-            // 
-            this.contactNumDataGridViewTextBoxColumn.DataPropertyName = "contactNum";
-            this.contactNumDataGridViewTextBoxColumn.HeaderText = "contactNum";
-            this.contactNumDataGridViewTextBoxColumn.Name = "contactNumDataGridViewTextBoxColumn";
-            this.contactNumDataGridViewTextBoxColumn.ReadOnly = true;
-            this.contactNumDataGridViewTextBoxColumn.Visible = false;
             // 
             // Sec1
             // 
             this.AccessibleName = "StudentDataGridView";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 744);
+            this.ClientSize = new System.Drawing.Size(728, 700);
             this.Controls.Add(this.Mname);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.contactNum);
@@ -439,10 +433,9 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Sec1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).EndInit();
-            
-            ((System.ComponentModel.ISupportInitialize)(this.sec1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sec1BindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sec1BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

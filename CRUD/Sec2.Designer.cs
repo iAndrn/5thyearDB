@@ -39,6 +39,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.StudentDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.middleNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sec2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cpe5thyearDataSetSec2 = new CRUD.Cpe5thyearDataSetSec2();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -54,19 +63,10 @@
             this.contactNum = new System.Windows.Forms.TextBox();
             this.Mname = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.cpe5thyearDataSetSec2 = new CRUD.Cpe5thyearDataSetSec2();
-            this.sec2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sec2TableAdapter = new CRUD.Cpe5thyearDataSetSec2TableAdapters.Sec2TableAdapter();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.middleNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sec2BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec2)).BeginInit();
             this.SuspendLayout();
             // 
             // searchtextstudentNum
@@ -178,167 +178,6 @@
             this.StudentDataGridView.VirtualMode = true;
             this.StudentDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentDataGridView_CellClick);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(247, 415);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(222, 36);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Student Details";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(94, 483);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 22);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "First Name:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(90, 525);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 22);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Last Name:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(36, 609);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(166, 22);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Student Number:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(63, 651);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(139, 22);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "Email Address:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(30, 693);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(172, 22);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "Contact Number:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(288, 156);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(140, 36);
-            this.label10.TabIndex = 24;
-            this.label10.Text = "Class List";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(302, 3);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(113, 36);
-            this.label11.TabIndex = 25;
-            this.label11.Text = "Search";
-            // 
-            // Fname
-            // 
-            this.Fname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Fname.Location = new System.Drawing.Point(201, 474);
-            this.Fname.Name = "Fname";
-            this.Fname.ReadOnly = true;
-            this.Fname.Size = new System.Drawing.Size(301, 31);
-            this.Fname.TabIndex = 26;
-            // 
-            // Lname
-            // 
-            this.Lname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lname.Location = new System.Drawing.Point(201, 516);
-            this.Lname.Name = "Lname";
-            this.Lname.ReadOnly = true;
-            this.Lname.Size = new System.Drawing.Size(301, 31);
-            this.Lname.TabIndex = 27;
-            // 
-            // emailAdd
-            // 
-            this.emailAdd.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailAdd.Location = new System.Drawing.Point(201, 642);
-            this.emailAdd.Name = "emailAdd";
-            this.emailAdd.ReadOnly = true;
-            this.emailAdd.Size = new System.Drawing.Size(301, 31);
-            this.emailAdd.TabIndex = 29;
-            // 
-            // studentNum
-            // 
-            this.studentNum.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentNum.Location = new System.Drawing.Point(201, 600);
-            this.studentNum.Name = "studentNum";
-            this.studentNum.ReadOnly = true;
-            this.studentNum.Size = new System.Drawing.Size(301, 31);
-            this.studentNum.TabIndex = 28;
-            // 
-            // contactNum
-            // 
-            this.contactNum.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contactNum.Location = new System.Drawing.Point(201, 684);
-            this.contactNum.Name = "contactNum";
-            this.contactNum.ReadOnly = true;
-            this.contactNum.Size = new System.Drawing.Size(301, 31);
-            this.contactNum.TabIndex = 30;
-            // 
-            // Mname
-            // 
-            this.Mname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mname.Location = new System.Drawing.Point(201, 558);
-            this.Mname.Name = "Mname";
-            this.Mname.ReadOnly = true;
-            this.Mname.Size = new System.Drawing.Size(301, 31);
-            this.Mname.TabIndex = 32;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(65, 567);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(137, 22);
-            this.label12.TabIndex = 31;
-            this.label12.Text = "Middle Name:";
-            // 
-            // cpe5thyearDataSetSec2
-            // 
-            this.cpe5thyearDataSetSec2.DataSetName = "Cpe5thyearDataSetSec2";
-            this.cpe5thyearDataSetSec2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sec2BindingSource
-            // 
-            this.sec2BindingSource.DataMember = "Sec2";
-            this.sec2BindingSource.DataSource = this.cpe5thyearDataSetSec2;
-            // 
-            // sec2TableAdapter
-            // 
-            this.sec2TableAdapter.ClearBeforeFill = true;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
@@ -391,11 +230,172 @@
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             this.dataGridViewTextBoxColumn6.Visible = false;
             // 
+            // sec2BindingSource
+            // 
+            this.sec2BindingSource.DataMember = "Sec2";
+            this.sec2BindingSource.DataSource = this.cpe5thyearDataSetSec2;
+            // 
+            // cpe5thyearDataSetSec2
+            // 
+            this.cpe5thyearDataSetSec2.DataSetName = "Cpe5thyearDataSetSec2";
+            this.cpe5thyearDataSetSec2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(247, 415);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(222, 36);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Student Details";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(98, 463);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(108, 22);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "First Name:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(94, 505);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(112, 22);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Last Name:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(40, 589);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(166, 22);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Student Number:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(67, 631);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(139, 22);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Email Address:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(34, 673);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(172, 22);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Contact Number:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(288, 156);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(140, 36);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "Class List";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(302, 3);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(113, 36);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "Search";
+            // 
+            // Fname
+            // 
+            this.Fname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fname.Location = new System.Drawing.Point(205, 454);
+            this.Fname.Name = "Fname";
+            this.Fname.ReadOnly = true;
+            this.Fname.Size = new System.Drawing.Size(301, 31);
+            this.Fname.TabIndex = 26;
+            // 
+            // Lname
+            // 
+            this.Lname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lname.Location = new System.Drawing.Point(205, 496);
+            this.Lname.Name = "Lname";
+            this.Lname.ReadOnly = true;
+            this.Lname.Size = new System.Drawing.Size(301, 31);
+            this.Lname.TabIndex = 27;
+            // 
+            // emailAdd
+            // 
+            this.emailAdd.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailAdd.Location = new System.Drawing.Point(205, 622);
+            this.emailAdd.Name = "emailAdd";
+            this.emailAdd.ReadOnly = true;
+            this.emailAdd.Size = new System.Drawing.Size(301, 31);
+            this.emailAdd.TabIndex = 29;
+            // 
+            // studentNum
+            // 
+            this.studentNum.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNum.Location = new System.Drawing.Point(205, 580);
+            this.studentNum.Name = "studentNum";
+            this.studentNum.ReadOnly = true;
+            this.studentNum.Size = new System.Drawing.Size(301, 31);
+            this.studentNum.TabIndex = 28;
+            // 
+            // contactNum
+            // 
+            this.contactNum.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactNum.Location = new System.Drawing.Point(205, 664);
+            this.contactNum.Name = "contactNum";
+            this.contactNum.ReadOnly = true;
+            this.contactNum.Size = new System.Drawing.Size(301, 31);
+            this.contactNum.TabIndex = 30;
+            // 
+            // Mname
+            // 
+            this.Mname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mname.Location = new System.Drawing.Point(205, 538);
+            this.Mname.Name = "Mname";
+            this.Mname.ReadOnly = true;
+            this.Mname.Size = new System.Drawing.Size(301, 31);
+            this.Mname.TabIndex = 32;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(69, 547);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(137, 22);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "Middle Name:";
+            // 
+            // sec2TableAdapter
+            // 
+            this.sec2TableAdapter.ClearBeforeFill = true;
+            // 
             // Sec2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 744);
+            this.ClientSize = new System.Drawing.Size(728, 700);
             this.Controls.Add(this.Mname);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.contactNum);
@@ -426,8 +426,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Sec2_FormClosing);
             this.Load += new System.EventHandler(this.Sec2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sec2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

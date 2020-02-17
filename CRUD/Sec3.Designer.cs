@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Mname = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.contactNum = new System.Windows.Forms.TextBox();
@@ -74,7 +74,7 @@
             // Mname
             // 
             this.Mname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mname.Location = new System.Drawing.Point(201, 558);
+            this.Mname.Location = new System.Drawing.Point(205, 538);
             this.Mname.Name = "Mname";
             this.Mname.ReadOnly = true;
             this.Mname.Size = new System.Drawing.Size(301, 31);
@@ -84,7 +84,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(65, 567);
+            this.label12.Location = new System.Drawing.Point(69, 547);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(137, 22);
             this.label12.TabIndex = 66;
@@ -93,7 +93,7 @@
             // contactNum
             // 
             this.contactNum.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contactNum.Location = new System.Drawing.Point(201, 684);
+            this.contactNum.Location = new System.Drawing.Point(205, 664);
             this.contactNum.Name = "contactNum";
             this.contactNum.ReadOnly = true;
             this.contactNum.Size = new System.Drawing.Size(301, 31);
@@ -102,7 +102,7 @@
             // emailAdd
             // 
             this.emailAdd.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailAdd.Location = new System.Drawing.Point(201, 642);
+            this.emailAdd.Location = new System.Drawing.Point(205, 622);
             this.emailAdd.Name = "emailAdd";
             this.emailAdd.ReadOnly = true;
             this.emailAdd.Size = new System.Drawing.Size(301, 31);
@@ -111,7 +111,7 @@
             // studentNum
             // 
             this.studentNum.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentNum.Location = new System.Drawing.Point(201, 600);
+            this.studentNum.Location = new System.Drawing.Point(205, 580);
             this.studentNum.Name = "studentNum";
             this.studentNum.ReadOnly = true;
             this.studentNum.Size = new System.Drawing.Size(301, 31);
@@ -120,7 +120,7 @@
             // Lname
             // 
             this.Lname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lname.Location = new System.Drawing.Point(201, 516);
+            this.Lname.Location = new System.Drawing.Point(205, 496);
             this.Lname.Name = "Lname";
             this.Lname.ReadOnly = true;
             this.Lname.Size = new System.Drawing.Size(301, 31);
@@ -129,7 +129,7 @@
             // Fname
             // 
             this.Fname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Fname.Location = new System.Drawing.Point(201, 474);
+            this.Fname.Location = new System.Drawing.Point(205, 454);
             this.Fname.Name = "Fname";
             this.Fname.ReadOnly = true;
             this.Fname.Size = new System.Drawing.Size(301, 31);
@@ -159,7 +159,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(30, 693);
+            this.label9.Location = new System.Drawing.Point(34, 673);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(172, 22);
             this.label9.TabIndex = 58;
@@ -169,7 +169,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(63, 651);
+            this.label8.Location = new System.Drawing.Point(67, 631);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(139, 22);
             this.label8.TabIndex = 57;
@@ -179,7 +179,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(36, 609);
+            this.label7.Location = new System.Drawing.Point(40, 589);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(166, 22);
             this.label7.TabIndex = 56;
@@ -189,7 +189,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(90, 525);
+            this.label6.Location = new System.Drawing.Point(94, 505);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(112, 22);
             this.label6.TabIndex = 55;
@@ -199,7 +199,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(94, 483);
+            this.label5.Location = new System.Drawing.Point(98, 463);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 22);
             this.label5.TabIndex = 54;
@@ -282,14 +282,14 @@
             this.StudentDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.StudentDataGridView.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.StudentDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.StudentDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StudentDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.StudentDataGridView.ColumnHeadersHeight = 30;
             this.StudentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.StudentDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -301,21 +301,21 @@
             this.emailAddDataGridViewTextBoxColumn,
             this.contactNumDataGridViewTextBoxColumn});
             this.StudentDataGridView.DataSource = this.sec3BindingSource;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.StudentDataGridView.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.StudentDataGridView.DefaultCellStyle = dataGridViewCellStyle5;
             this.StudentDataGridView.Location = new System.Drawing.Point(36, 197);
             this.StudentDataGridView.Margin = new System.Windows.Forms.Padding(0);
             this.StudentDataGridView.Name = "StudentDataGridView";
             this.StudentDataGridView.ReadOnly = true;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.StudentDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.StudentDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.StudentDataGridView.Size = new System.Drawing.Size(645, 215);
@@ -397,7 +397,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 744);
+            this.ClientSize = new System.Drawing.Size(728, 700);
             this.Controls.Add(this.Mname);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.contactNum);
