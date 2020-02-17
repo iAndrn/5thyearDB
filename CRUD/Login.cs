@@ -103,5 +103,33 @@ namespace CRUD
             changePass mm = new changePass();
             mm.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void User_TextChanged(object sender, EventArgs e)
+        {
+            panel1.BackColor = System.Drawing.Color.ForestGreen;
+            panel2.BackColor = System.Drawing.Color.White;
+        }
+
+        private void User_Click(object sender, EventArgs e)
+        {
+            User.Clear();
+        }
+
+        private void Pass_Click(object sender, EventArgs e)
+        {
+            Pass.Clear();
+        }
+
+        private void Pass_TextChanged(object sender, EventArgs e)
+        {
+            Pass.PasswordChar = '*' ;
+            panel1.BackColor = System.Drawing.Color.White;
+            panel2.BackColor = System.Drawing.Color.ForestGreen;
+        }
     }
 }
