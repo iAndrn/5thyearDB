@@ -73,6 +73,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Cpe5thyearDataSetSec3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Cpe5thyearDataSetSec4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cpe5thyearDataSetSec4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cpe5thyearDataSetSec5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cpe5thyearDataSetSec5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cpe5thyearDataSetSec6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cpe5thyearDataSetSec6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Sec1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +120,18 @@
     <Compile Include="Sec4.Designer.cs">
       <DependentUpon>Sec4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sec5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sec5.Designer.cs">
+      <DependentUpon>Sec5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sec6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sec6.Designer.cs">
+      <DependentUpon>Sec6.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="changePass.resx">
       <DependentUpon>changePass.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +158,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sec4.resx">
       <DependentUpon>Sec4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sec5.resx">
+      <DependentUpon>Sec5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sec6.resx">
+      <DependentUpon>Sec6.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Cpe5thyearDataSetSec1.xsc">
       <DependentUpon>Cpe5thyearDataSetSec1.xsd</DependentUpon>
@@ -164,6 +197,39 @@
     </None>
     <None Include="Cpe5thyearDataSetSec3.xss">
       <DependentUpon>Cpe5thyearDataSetSec3.xsd</DependentUpon>
+    </None>
+    <None Include="Cpe5thyearDataSetSec4.xsc">
+      <DependentUpon>Cpe5thyearDataSetSec4.xsd</DependentUpon>
+    </None>
+    <None Include="Cpe5thyearDataSetSec4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cpe5thyearDataSetSec4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cpe5thyearDataSetSec4.xss">
+      <DependentUpon>Cpe5thyearDataSetSec4.xsd</DependentUpon>
+    </None>
+    <None Include="Cpe5thyearDataSetSec5.xsc">
+      <DependentUpon>Cpe5thyearDataSetSec5.xsd</DependentUpon>
+    </None>
+    <None Include="Cpe5thyearDataSetSec5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cpe5thyearDataSetSec5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cpe5thyearDataSetSec5.xss">
+      <DependentUpon>Cpe5thyearDataSetSec5.xsd</DependentUpon>
+    </None>
+    <None Include="Cpe5thyearDataSetSec6.xsc">
+      <DependentUpon>Cpe5thyearDataSetSec6.xsd</DependentUpon>
+    </None>
+    <None Include="Cpe5thyearDataSetSec6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cpe5thyearDataSetSec6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cpe5thyearDataSetSec6.xss">
+      <DependentUpon>Cpe5thyearDataSetSec6.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

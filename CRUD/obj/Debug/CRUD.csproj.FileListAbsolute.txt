@@ -12,3 +12,5 @@ C:\Users\Andreian\source\repos\CRUD\CRUD\obj\Debug\CRUD.changePass.resources
 C:\Users\Andreian\source\repos\CRUD\CRUD\obj\Debug\CRUD.Sec2.resources
 C:\Users\Andreian\source\repos\CRUD\CRUD\obj\Debug\CRUD.Sec4.resources
 C:\Users\Andreian\source\repos\CRUD\CRUD\obj\Debug\CRUD.Sec3.resources
+C:\Users\Andreian\source\repos\CRUD\CRUD\obj\Debug\CRUD.Sec5.resources
+C:\Users\Andreian\source\repos\CRUD\CRUD\obj\Debug\CRUD.Sec6.resources

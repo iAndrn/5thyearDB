@@ -38,10 +38,10 @@ namespace CRUD
                 else if (User.Text == "Sec3Admin")
                 {
                     MessageBox.Show("Login Succesful Sec3Admin", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    /*Sec3 mm = new Sec3();
+                    Sec3 mm = new Sec3();
                     this.Hide();
 
-                    mm.Show();*/
+                    mm.Show();
                 }
                 else if (User.Text == "Sec4Admin")
                 {
@@ -54,12 +54,20 @@ namespace CRUD
                 }
                 else if (User.Text == "Sec5Admin")
                 {
-                    MessageBox.Show("No Page Yet for Section 5", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Login Succesful Sec5Admin", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Sec5 mm = new Sec5();
+                    this.Hide();
+
+                    mm.Show();
 
                 }
                 else
                 {
-                    MessageBox.Show("No Page Yet for Section 6", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Login Succesful Sec5Admin", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Sec6 mm = new Sec6();
+                    this.Hide();
+
+                    mm.Show();
                 }
 
 

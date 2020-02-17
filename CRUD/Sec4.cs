@@ -15,7 +15,9 @@ namespace CRUD
         private void Sec4_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'cpe5thyearDataSetSec4.Sec4' table. You can move, or remove it, as needed.
-           
+            this.sec4TableAdapter.Fill(this.cpe5thyearDataSetSec4.Sec4);
+            // TODO: This line of code loads data into the 'cpe5thyearDataSetSec4.Sec4' table. You can move, or remove it, as needed.
+
             // TODO: This line of code loads data into the 'cpe5thyearDataSet.Sec4' table. You can move, or remove it, as needed.
 
             GetStudentsRecord();

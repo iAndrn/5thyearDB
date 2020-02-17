@@ -5,17 +5,17 @@ using System.Data;
 
 namespace CRUD
 {
-    public partial class Sec3 : Form
+    public partial class Sec6 : Form
     {
-        public Sec3()
+        public Sec6()
         {
             InitializeComponent();
         }
 
-        private void Sec3_Load(object sender, EventArgs e)
+        private void Sec6_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'cpe5thyearDataSetSec3.Sec3' table. You can move, or remove it, as needed.
-            this.sec3TableAdapter.Fill(this.cpe5thyearDataSetSec3.Sec3);
+            // TODO: This line of code loads data into the 'cpe5thyearDataSetSec6.Sec6' table. You can move, or remove it, as needed.
+            this.sec6TableAdapter.Fill(this.cpe5thyearDataSetSec6.Sec6);
             GetStudentsRecord();
 
         }
@@ -23,7 +23,7 @@ namespace CRUD
         private void GetStudentsRecord()
         {
 
-            SqlCommand cmd = new SqlCommand("Select * From Sec3", conn);
+            SqlCommand cmd = new SqlCommand("Select * From Sec6", conn);
             DataTable dt = new DataTable();
             conn.Open();
 
@@ -36,7 +36,7 @@ namespace CRUD
 
         public void searchFname(string findValue)
         {
-            string searchQuery = "SELECT * FROM Sec3 WHERE (FirstName) LIKE '%" + findValue + "%'";
+            string searchQuery = "SELECT * FROM Sec6 WHERE (FirstName) LIKE '%" + findValue + "%'";
             SqlDataAdapter adpt = new SqlDataAdapter(searchQuery, conn);
             DataTable table = new DataTable();
             adpt.Fill(table);
@@ -45,7 +45,7 @@ namespace CRUD
         }
         public void searchLname(string findValue)
         {
-            string searchQuery = "SELECT * FROM Sec3 WHERE (LastName) LIKE '%" + findValue + "%'";
+            string searchQuery = "SELECT * FROM Sec6 WHERE (LastName) LIKE '%" + findValue + "%'";
             SqlDataAdapter adpt = new SqlDataAdapter(searchQuery, conn);
             DataTable table = new DataTable();
             adpt.Fill(table);
@@ -54,7 +54,7 @@ namespace CRUD
         }
         public void searchstudentNum(string findValue)
         {
-            string searchQuery = "SELECT * FROM Sec3 WHERE (StudentNum) LIKE '%" + findValue + "%'";
+            string searchQuery = "SELECT * FROM Sec6 WHERE (StudentNum) LIKE '%" + findValue + "%'";
             SqlDataAdapter adpt = new SqlDataAdapter(searchQuery, conn);
             DataTable table = new DataTable();
             adpt.Fill(table);
@@ -77,11 +77,13 @@ namespace CRUD
             searchstudentNum(searchtextstudentNum.Text);
         }
 
-        private void Sec3_FormClosing(object sender, FormClosingEventArgs e)
+        private void Sec6_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
             Login mm = new Login();
             mm.Show();
         }
+
+
     }
 }
