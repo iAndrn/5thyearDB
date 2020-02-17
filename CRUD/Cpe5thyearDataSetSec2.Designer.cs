@@ -285,6 +285,8 @@ namespace CRUD {
             
             private global::System.Data.DataColumn columnLastName;
             
+            private global::System.Data.DataColumn columnMiddleName;
+            
             private global::System.Data.DataColumn columnStudentNum;
             
             private global::System.Data.DataColumn columnemailAdd;
@@ -350,6 +352,14 @@ namespace CRUD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn MiddleNameColumn {
+                get {
+                    return this.columnMiddleName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public global::System.Data.DataColumn StudentNumColumn {
                 get {
                     return this.columnStudentNum;
@@ -409,12 +419,13 @@ namespace CRUD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Sec2Row AddSec2Row(string FirstName, string LastName, string StudentNum, string emailAdd, string contactNum) {
+            public Sec2Row AddSec2Row(string FirstName, string LastName, string MiddleName, string StudentNum, string emailAdd, string contactNum) {
                 Sec2Row rowSec2Row = ((Sec2Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         FirstName,
                         LastName,
+                        MiddleName,
                         StudentNum,
                         emailAdd,
                         contactNum};
@@ -443,6 +454,7 @@ namespace CRUD {
                 this.columnid = base.Columns["id"];
                 this.columnFirstName = base.Columns["FirstName"];
                 this.columnLastName = base.Columns["LastName"];
+                this.columnMiddleName = base.Columns["MiddleName"];
                 this.columnStudentNum = base.Columns["StudentNum"];
                 this.columnemailAdd = base.Columns["emailAdd"];
                 this.columncontactNum = base.Columns["contactNum"];
@@ -457,6 +469,8 @@ namespace CRUD {
                 base.Columns.Add(this.columnFirstName);
                 this.columnLastName = new global::System.Data.DataColumn("LastName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLastName);
+                this.columnMiddleName = new global::System.Data.DataColumn("MiddleName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMiddleName);
                 this.columnStudentNum = new global::System.Data.DataColumn("StudentNum", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnStudentNum);
                 this.columnemailAdd = new global::System.Data.DataColumn("emailAdd", typeof(string), null, global::System.Data.MappingType.Element);
@@ -470,6 +484,7 @@ namespace CRUD {
                 this.columnid.ReadOnly = true;
                 this.columnFirstName.MaxLength = 50;
                 this.columnLastName.MaxLength = 50;
+                this.columnMiddleName.MaxLength = 50;
                 this.columnStudentNum.MaxLength = 50;
                 this.columnemailAdd.MaxLength = 50;
                 this.columncontactNum.MaxLength = 50;
@@ -658,6 +673,22 @@ namespace CRUD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string MiddleName {
+                get {
+                    try {
+                        return ((string)(this[this.tableSec2.MiddleNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MiddleName\' in table \'Sec2\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSec2.MiddleNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string StudentNum {
                 get {
                     try {
@@ -726,6 +757,18 @@ namespace CRUD {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetLastNameNull() {
                 this[this.tableSec2.LastNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsMiddleNameNull() {
+                return this.IsNull(this.tableSec2.MiddleNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetMiddleNameNull() {
+                this[this.tableSec2.MiddleNameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -927,17 +970,20 @@ namespace CRUD.Cpe5thyearDataSetSec2TableAdapters {
             tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("FirstName", "FirstName");
             tableMapping.ColumnMappings.Add("LastName", "LastName");
+            tableMapping.ColumnMappings.Add("MiddleName", "MiddleName");
             tableMapping.ColumnMappings.Add("StudentNum", "StudentNum");
             tableMapping.ColumnMappings.Add("emailAdd", "emailAdd");
             tableMapping.ColumnMappings.Add("contactNum", "contactNum");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Sec2] ([FirstName], [LastName], [StudentNum], [emailAdd], [con" +
-                "tactNum]) VALUES (@FirstName, @LastName, @StudentNum, @emailAdd, @contactNum)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Sec2] ([FirstName], [LastName], [MiddleName], [StudentNum], [e" +
+                "mailAdd], [contactNum]) VALUES (@FirstName, @LastName, @MiddleName, @StudentNum," +
+                " @emailAdd, @contactNum)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FirstName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FirstName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LastName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LastName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MiddleName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MiddleName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StudentNum", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StudentNum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@emailAdd", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "emailAdd", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contactNum", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contactNum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -956,7 +1002,8 @@ namespace CRUD.Cpe5thyearDataSetSec2TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT id, FirstName, LastName, StudentNum, emailAdd, contactNum FROM dbo.Sec2";
+            this._commandCollection[0].CommandText = "SELECT id, FirstName, LastName, MiddleName, StudentNum, emailAdd, contactNum FROM" +
+                " dbo.Sec2";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1017,7 +1064,7 @@ namespace CRUD.Cpe5thyearDataSetSec2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string FirstName, string LastName, string StudentNum, string emailAdd, string contactNum) {
+        public virtual int Insert(string FirstName, string LastName, string MiddleName, string StudentNum, string emailAdd, string contactNum) {
             if ((FirstName == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -1030,23 +1077,29 @@ namespace CRUD.Cpe5thyearDataSetSec2TableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(LastName));
             }
-            if ((StudentNum == null)) {
+            if ((MiddleName == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(StudentNum));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(MiddleName));
             }
-            if ((emailAdd == null)) {
+            if ((StudentNum == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(emailAdd));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(StudentNum));
             }
-            if ((contactNum == null)) {
+            if ((emailAdd == null)) {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(contactNum));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(emailAdd));
+            }
+            if ((contactNum == null)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(contactNum));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 

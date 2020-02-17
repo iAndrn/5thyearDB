@@ -16,8 +16,10 @@ namespace CRUD
         {
             // TODO: This line of code loads data into the 'cpe5thyearDataSetSec2.Sec2' table. You can move, or remove it, as needed.
             this.sec2TableAdapter.Fill(this.cpe5thyearDataSetSec2.Sec2);
+            // TODO: This line of code loads data into the 'cpe5thyearDataSetSec2.Sec2' table. You can move, or remove it, as needed.
+
             // TODO: This line of code loads data into the 'cPEDataSetSec2.Sec2' table. You can move, or remove it, as needed.
-            
+
 
             GetStudentsRecord();
 
@@ -103,9 +105,20 @@ namespace CRUD
         {
             Fname.Text = StudentDataGridView.SelectedRows[0].Cells[1].Value.ToString();
             Lname.Text = StudentDataGridView.SelectedRows[0].Cells[2].Value.ToString();
-            studentNum.Text = StudentDataGridView.SelectedRows[0].Cells[3].Value.ToString();
-            emailAdd.Text = StudentDataGridView.SelectedRows[0].Cells[4].Value.ToString();
-            contactNum.Text = StudentDataGridView.SelectedRows[0].Cells[5].Value.ToString();
+            Mname.Text = StudentDataGridView.SelectedRows[0].Cells[3].Value.ToString();
+            studentNum.Text = StudentDataGridView.SelectedRows[0].Cells[4].Value.ToString();
+            emailAdd.Text = StudentDataGridView.SelectedRows[0].Cells[5].Value.ToString();
+            contactNum.Text = StudentDataGridView.SelectedRows[0].Cells[6].Value.ToString();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

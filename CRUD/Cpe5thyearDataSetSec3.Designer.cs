@@ -20,17 +20,17 @@ namespace CRUD {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("Cpe5thyearDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("Cpe5thyearDataSetSec3")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class Cpe5thyearDataSet : global::System.Data.DataSet {
+    public partial class Cpe5thyearDataSetSec3 : global::System.Data.DataSet {
         
-        private Sec2DataTable tableSec2;
+        private Sec3DataTable tableSec3;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public Cpe5thyearDataSet() {
+        public Cpe5thyearDataSetSec3() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace CRUD {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected Cpe5thyearDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected Cpe5thyearDataSetSec3(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace CRUD {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Sec2"] != null)) {
-                    base.Tables.Add(new Sec2DataTable(ds.Tables["Sec2"]));
+                if ((ds.Tables["Sec3"] != null)) {
+                    base.Tables.Add(new Sec3DataTable(ds.Tables["Sec3"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace CRUD {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Sec2DataTable Sec2 {
+        public Sec3DataTable Sec3 {
             get {
-                return this.tableSec2;
+                return this.tableSec3;
             }
         }
         
@@ -127,7 +127,7 @@ namespace CRUD {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            Cpe5thyearDataSet cln = ((Cpe5thyearDataSet)(base.Clone()));
+            Cpe5thyearDataSetSec3 cln = ((Cpe5thyearDataSetSec3)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace CRUD {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Sec2"] != null)) {
-                    base.Tables.Add(new Sec2DataTable(ds.Tables["Sec2"]));
+                if ((ds.Tables["Sec3"] != null)) {
+                    base.Tables.Add(new Sec3DataTable(ds.Tables["Sec3"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace CRUD {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableSec2 = ((Sec2DataTable)(base.Tables["Sec2"]));
+            this.tableSec3 = ((Sec3DataTable)(base.Tables["Sec3"]));
             if ((initTable == true)) {
-                if ((this.tableSec2 != null)) {
-                    this.tableSec2.InitVars();
+                if ((this.tableSec3 != null)) {
+                    this.tableSec3.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace CRUD {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "Cpe5thyearDataSet";
+            this.DataSetName = "Cpe5thyearDataSetSec3";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/Cpe5thyearDataSet.xsd";
+            this.Namespace = "http://tempuri.org/Cpe5thyearDataSetSec3.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableSec2 = new Sec2DataTable();
-            base.Tables.Add(this.tableSec2);
+            this.tableSec3 = new Sec3DataTable();
+            base.Tables.Add(this.tableSec3);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeSec2() {
+        private bool ShouldSerializeSec3() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace CRUD {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            Cpe5thyearDataSet ds = new Cpe5thyearDataSet();
+            Cpe5thyearDataSetSec3 ds = new Cpe5thyearDataSetSec3();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,20 +270,22 @@ namespace CRUD {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void Sec2RowChangeEventHandler(object sender, Sec2RowChangeEvent e);
+        public delegate void Sec3RowChangeEventHandler(object sender, Sec3RowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Sec2DataTable : global::System.Data.TypedTableBase<Sec2Row> {
+        public partial class Sec3DataTable : global::System.Data.TypedTableBase<Sec3Row> {
             
             private global::System.Data.DataColumn columnid;
             
             private global::System.Data.DataColumn columnFirstName;
             
             private global::System.Data.DataColumn columnLastName;
+            
+            private global::System.Data.DataColumn columnMiddleName;
             
             private global::System.Data.DataColumn columnStudentNum;
             
@@ -293,8 +295,8 @@ namespace CRUD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Sec2DataTable() {
-                this.TableName = "Sec2";
+            public Sec3DataTable() {
+                this.TableName = "Sec3";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -302,7 +304,7 @@ namespace CRUD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal Sec2DataTable(global::System.Data.DataTable table) {
+            internal Sec3DataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -319,7 +321,7 @@ namespace CRUD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected Sec2DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Sec3DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -345,6 +347,14 @@ namespace CRUD {
             public global::System.Data.DataColumn LastNameColumn {
                 get {
                     return this.columnLastName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn MiddleNameColumn {
+                get {
+                    return this.columnMiddleName;
                 }
             }
             
@@ -383,50 +393,51 @@ namespace CRUD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Sec2Row this[int index] {
+            public Sec3Row this[int index] {
                 get {
-                    return ((Sec2Row)(this.Rows[index]));
+                    return ((Sec3Row)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Sec2RowChangeEventHandler Sec2RowChanging;
+            public event Sec3RowChangeEventHandler Sec3RowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Sec2RowChangeEventHandler Sec2RowChanged;
+            public event Sec3RowChangeEventHandler Sec3RowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Sec2RowChangeEventHandler Sec2RowDeleting;
+            public event Sec3RowChangeEventHandler Sec3RowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Sec2RowChangeEventHandler Sec2RowDeleted;
+            public event Sec3RowChangeEventHandler Sec3RowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddSec2Row(Sec2Row row) {
+            public void AddSec3Row(Sec3Row row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Sec2Row AddSec2Row(string FirstName, string LastName, string StudentNum, string emailAdd, string contactNum) {
-                Sec2Row rowSec2Row = ((Sec2Row)(this.NewRow()));
+            public Sec3Row AddSec3Row(string FirstName, string LastName, string MiddleName, string StudentNum, string emailAdd, string contactNum) {
+                Sec3Row rowSec3Row = ((Sec3Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         FirstName,
                         LastName,
+                        MiddleName,
                         StudentNum,
                         emailAdd,
                         contactNum};
-                rowSec2Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowSec2Row);
-                return rowSec2Row;
+                rowSec3Row.ItemArray = columnValuesArray;
+                this.Rows.Add(rowSec3Row);
+                return rowSec3Row;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Sec2DataTable cln = ((Sec2DataTable)(base.Clone()));
+                Sec3DataTable cln = ((Sec3DataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -434,7 +445,7 @@ namespace CRUD {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Sec2DataTable();
+                return new Sec3DataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -443,6 +454,7 @@ namespace CRUD {
                 this.columnid = base.Columns["id"];
                 this.columnFirstName = base.Columns["FirstName"];
                 this.columnLastName = base.Columns["LastName"];
+                this.columnMiddleName = base.Columns["MiddleName"];
                 this.columnStudentNum = base.Columns["StudentNum"];
                 this.columnemailAdd = base.Columns["emailAdd"];
                 this.columncontactNum = base.Columns["contactNum"];
@@ -457,6 +469,8 @@ namespace CRUD {
                 base.Columns.Add(this.columnFirstName);
                 this.columnLastName = new global::System.Data.DataColumn("LastName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLastName);
+                this.columnMiddleName = new global::System.Data.DataColumn("MiddleName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMiddleName);
                 this.columnStudentNum = new global::System.Data.DataColumn("StudentNum", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnStudentNum);
                 this.columnemailAdd = new global::System.Data.DataColumn("emailAdd", typeof(string), null, global::System.Data.MappingType.Element);
@@ -470,6 +484,7 @@ namespace CRUD {
                 this.columnid.ReadOnly = true;
                 this.columnFirstName.MaxLength = 50;
                 this.columnLastName.MaxLength = 50;
+                this.columnMiddleName.MaxLength = 50;
                 this.columnStudentNum.MaxLength = 50;
                 this.columnemailAdd.MaxLength = 50;
                 this.columncontactNum.MaxLength = 50;
@@ -477,28 +492,28 @@ namespace CRUD {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Sec2Row NewSec2Row() {
-                return ((Sec2Row)(this.NewRow()));
+            public Sec3Row NewSec3Row() {
+                return ((Sec3Row)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Sec2Row(builder);
+                return new Sec3Row(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Sec2Row);
+                return typeof(Sec3Row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Sec2RowChanged != null)) {
-                    this.Sec2RowChanged(this, new Sec2RowChangeEvent(((Sec2Row)(e.Row)), e.Action));
+                if ((this.Sec3RowChanged != null)) {
+                    this.Sec3RowChanged(this, new Sec3RowChangeEvent(((Sec3Row)(e.Row)), e.Action));
                 }
             }
             
@@ -506,8 +521,8 @@ namespace CRUD {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Sec2RowChanging != null)) {
-                    this.Sec2RowChanging(this, new Sec2RowChangeEvent(((Sec2Row)(e.Row)), e.Action));
+                if ((this.Sec3RowChanging != null)) {
+                    this.Sec3RowChanging(this, new Sec3RowChangeEvent(((Sec3Row)(e.Row)), e.Action));
                 }
             }
             
@@ -515,8 +530,8 @@ namespace CRUD {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Sec2RowDeleted != null)) {
-                    this.Sec2RowDeleted(this, new Sec2RowChangeEvent(((Sec2Row)(e.Row)), e.Action));
+                if ((this.Sec3RowDeleted != null)) {
+                    this.Sec3RowDeleted(this, new Sec3RowChangeEvent(((Sec3Row)(e.Row)), e.Action));
                 }
             }
             
@@ -524,14 +539,14 @@ namespace CRUD {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Sec2RowDeleting != null)) {
-                    this.Sec2RowDeleting(this, new Sec2RowChangeEvent(((Sec2Row)(e.Row)), e.Action));
+                if ((this.Sec3RowDeleting != null)) {
+                    this.Sec3RowDeleting(this, new Sec3RowChangeEvent(((Sec3Row)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveSec2Row(Sec2Row row) {
+            public void RemoveSec3Row(Sec3Row row) {
                 this.Rows.Remove(row);
             }
             
@@ -540,7 +555,7 @@ namespace CRUD {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Cpe5thyearDataSet ds = new Cpe5thyearDataSet();
+                Cpe5thyearDataSetSec3 ds = new Cpe5thyearDataSetSec3();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -558,7 +573,7 @@ namespace CRUD {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Sec2DataTable";
+                attribute2.FixedValue = "Sec3DataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -602,25 +617,25 @@ namespace CRUD {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Sec2Row : global::System.Data.DataRow {
+        public partial class Sec3Row : global::System.Data.DataRow {
             
-            private Sec2DataTable tableSec2;
+            private Sec3DataTable tableSec3;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal Sec2Row(global::System.Data.DataRowBuilder rb) : 
+            internal Sec3Row(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableSec2 = ((Sec2DataTable)(this.Table));
+                this.tableSec3 = ((Sec3DataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int id {
                 get {
-                    return ((int)(this[this.tableSec2.idColumn]));
+                    return ((int)(this[this.tableSec3.idColumn]));
                 }
                 set {
-                    this[this.tableSec2.idColumn] = value;
+                    this[this.tableSec3.idColumn] = value;
                 }
             }
             
@@ -629,14 +644,14 @@ namespace CRUD {
             public string FirstName {
                 get {
                     try {
-                        return ((string)(this[this.tableSec2.FirstNameColumn]));
+                        return ((string)(this[this.tableSec3.FirstNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FirstName\' in table \'Sec2\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'FirstName\' in table \'Sec3\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSec2.FirstNameColumn] = value;
+                    this[this.tableSec3.FirstNameColumn] = value;
                 }
             }
             
@@ -645,14 +660,30 @@ namespace CRUD {
             public string LastName {
                 get {
                     try {
-                        return ((string)(this[this.tableSec2.LastNameColumn]));
+                        return ((string)(this[this.tableSec3.LastNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'LastName\' in table \'Sec2\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'LastName\' in table \'Sec3\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSec2.LastNameColumn] = value;
+                    this[this.tableSec3.LastNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string MiddleName {
+                get {
+                    try {
+                        return ((string)(this[this.tableSec3.MiddleNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MiddleName\' in table \'Sec3\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSec3.MiddleNameColumn] = value;
                 }
             }
             
@@ -661,14 +692,14 @@ namespace CRUD {
             public string StudentNum {
                 get {
                     try {
-                        return ((string)(this[this.tableSec2.StudentNumColumn]));
+                        return ((string)(this[this.tableSec3.StudentNumColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'StudentNum\' in table \'Sec2\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'StudentNum\' in table \'Sec3\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSec2.StudentNumColumn] = value;
+                    this[this.tableSec3.StudentNumColumn] = value;
                 }
             }
             
@@ -677,14 +708,14 @@ namespace CRUD {
             public string emailAdd {
                 get {
                     try {
-                        return ((string)(this[this.tableSec2.emailAddColumn]));
+                        return ((string)(this[this.tableSec3.emailAddColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'emailAdd\' in table \'Sec2\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'emailAdd\' in table \'Sec3\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSec2.emailAddColumn] = value;
+                    this[this.tableSec3.emailAddColumn] = value;
                 }
             }
             
@@ -693,75 +724,87 @@ namespace CRUD {
             public string contactNum {
                 get {
                     try {
-                        return ((string)(this[this.tableSec2.contactNumColumn]));
+                        return ((string)(this[this.tableSec3.contactNumColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'contactNum\' in table \'Sec2\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'contactNum\' in table \'Sec3\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSec2.contactNumColumn] = value;
+                    this[this.tableSec3.contactNumColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsFirstNameNull() {
-                return this.IsNull(this.tableSec2.FirstNameColumn);
+                return this.IsNull(this.tableSec3.FirstNameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetFirstNameNull() {
-                this[this.tableSec2.FirstNameColumn] = global::System.Convert.DBNull;
+                this[this.tableSec3.FirstNameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsLastNameNull() {
-                return this.IsNull(this.tableSec2.LastNameColumn);
+                return this.IsNull(this.tableSec3.LastNameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetLastNameNull() {
-                this[this.tableSec2.LastNameColumn] = global::System.Convert.DBNull;
+                this[this.tableSec3.LastNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsMiddleNameNull() {
+                return this.IsNull(this.tableSec3.MiddleNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetMiddleNameNull() {
+                this[this.tableSec3.MiddleNameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsStudentNumNull() {
-                return this.IsNull(this.tableSec2.StudentNumColumn);
+                return this.IsNull(this.tableSec3.StudentNumColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetStudentNumNull() {
-                this[this.tableSec2.StudentNumColumn] = global::System.Convert.DBNull;
+                this[this.tableSec3.StudentNumColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsemailAddNull() {
-                return this.IsNull(this.tableSec2.emailAddColumn);
+                return this.IsNull(this.tableSec3.emailAddColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetemailAddNull() {
-                this[this.tableSec2.emailAddColumn] = global::System.Convert.DBNull;
+                this[this.tableSec3.emailAddColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IscontactNumNull() {
-                return this.IsNull(this.tableSec2.contactNumColumn);
+                return this.IsNull(this.tableSec3.contactNumColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetcontactNumNull() {
-                this[this.tableSec2.contactNumColumn] = global::System.Convert.DBNull;
+                this[this.tableSec3.contactNumColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -769,22 +812,22 @@ namespace CRUD {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class Sec2RowChangeEvent : global::System.EventArgs {
+        public class Sec3RowChangeEvent : global::System.EventArgs {
             
-            private Sec2Row eventRow;
+            private Sec3Row eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Sec2RowChangeEvent(Sec2Row row, global::System.Data.DataRowAction action) {
+            public Sec3RowChangeEvent(Sec3Row row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Sec2Row Row {
+            public Sec3Row Row {
                 get {
                     return this.eventRow;
                 }
@@ -800,7 +843,7 @@ namespace CRUD {
         }
     }
 }
-namespace CRUD.Cpe5thyearDataSetTableAdapters {
+namespace CRUD.Cpe5thyearDataSetSec3TableAdapters {
     
     
     /// <summary>
@@ -812,7 +855,7 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Sec2TableAdapter : global::System.ComponentModel.Component {
+    public partial class Sec3TableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -826,7 +869,7 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public Sec2TableAdapter() {
+        public Sec3TableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -923,21 +966,24 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Sec2";
+            tableMapping.DataSetTable = "Sec3";
             tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("FirstName", "FirstName");
             tableMapping.ColumnMappings.Add("LastName", "LastName");
+            tableMapping.ColumnMappings.Add("MiddleName", "MiddleName");
             tableMapping.ColumnMappings.Add("StudentNum", "StudentNum");
             tableMapping.ColumnMappings.Add("emailAdd", "emailAdd");
             tableMapping.ColumnMappings.Add("contactNum", "contactNum");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Sec2] ([FirstName], [LastName], [StudentNum], [emailAdd], [con" +
-                "tactNum]) VALUES (@FirstName, @LastName, @StudentNum, @emailAdd, @contactNum)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Sec3] ([FirstName], [LastName], [MiddleName], [StudentNum], [e" +
+                "mailAdd], [contactNum]) VALUES (@FirstName, @LastName, @MiddleName, @StudentNum," +
+                " @emailAdd, @contactNum)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FirstName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FirstName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LastName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LastName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MiddleName", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MiddleName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StudentNum", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StudentNum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@emailAdd", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "emailAdd", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contactNum", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contactNum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -956,7 +1002,8 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT id, FirstName, LastName, StudentNum, emailAdd, contactNum FROM dbo.Sec2";
+            this._commandCollection[0].CommandText = "SELECT id, FirstName, LastName, MiddleName, StudentNum, emailAdd, contactNum FROM" +
+                " dbo.Sec3";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -964,7 +1011,7 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Cpe5thyearDataSet.Sec2DataTable dataTable) {
+        public virtual int Fill(Cpe5thyearDataSetSec3.Sec3DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -977,9 +1024,9 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Cpe5thyearDataSet.Sec2DataTable GetData() {
+        public virtual Cpe5thyearDataSetSec3.Sec3DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Cpe5thyearDataSet.Sec2DataTable dataTable = new Cpe5thyearDataSet.Sec2DataTable();
+            Cpe5thyearDataSetSec3.Sec3DataTable dataTable = new Cpe5thyearDataSetSec3.Sec3DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -987,15 +1034,15 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Cpe5thyearDataSet.Sec2DataTable dataTable) {
+        public virtual int Update(Cpe5thyearDataSetSec3.Sec3DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(Cpe5thyearDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Sec2");
+        public virtual int Update(Cpe5thyearDataSetSec3 dataSet) {
+            return this.Adapter.Update(dataSet, "Sec3");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1017,7 +1064,7 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string FirstName, string LastName, string StudentNum, string emailAdd, string contactNum) {
+        public virtual int Insert(string FirstName, string LastName, string MiddleName, string StudentNum, string emailAdd, string contactNum) {
             if ((FirstName == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -1030,23 +1077,29 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(LastName));
             }
-            if ((StudentNum == null)) {
+            if ((MiddleName == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(StudentNum));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(MiddleName));
             }
-            if ((emailAdd == null)) {
+            if ((StudentNum == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(emailAdd));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(StudentNum));
             }
-            if ((contactNum == null)) {
+            if ((emailAdd == null)) {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(contactNum));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(emailAdd));
+            }
+            if ((contactNum == null)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(contactNum));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1077,7 +1130,7 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private Sec2TableAdapter _sec2TableAdapter;
+        private Sec3TableAdapter _sec3TableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1099,12 +1152,12 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public Sec2TableAdapter Sec2TableAdapter {
+        public Sec3TableAdapter Sec3TableAdapter {
             get {
-                return this._sec2TableAdapter;
+                return this._sec3TableAdapter;
             }
             set {
-                this._sec2TableAdapter = value;
+                this._sec3TableAdapter = value;
             }
         }
         
@@ -1127,9 +1180,9 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._sec2TableAdapter != null) 
-                            && (this._sec2TableAdapter.Connection != null))) {
-                    return this._sec2TableAdapter.Connection;
+                if (((this._sec3TableAdapter != null) 
+                            && (this._sec3TableAdapter.Connection != null))) {
+                    return this._sec3TableAdapter.Connection;
                 }
                 return null;
             }
@@ -1144,7 +1197,7 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._sec2TableAdapter != null)) {
+                if ((this._sec3TableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1156,14 +1209,14 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(Cpe5thyearDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(Cpe5thyearDataSetSec3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._sec2TableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Sec2.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._sec3TableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Sec3.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._sec2TableAdapter.Update(updatedRows));
+                    result = (result + this._sec3TableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1175,13 +1228,13 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(Cpe5thyearDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(Cpe5thyearDataSetSec3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._sec2TableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Sec2.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._sec3TableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Sec3.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._sec2TableAdapter.Update(addedRows));
+                    result = (result + this._sec3TableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1193,13 +1246,13 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(Cpe5thyearDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(Cpe5thyearDataSetSec3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._sec2TableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Sec2.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._sec3TableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Sec3.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._sec2TableAdapter.Update(deletedRows));
+                    result = (result + this._sec3TableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1235,15 +1288,15 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(Cpe5thyearDataSet dataSet) {
+        public virtual int UpdateAll(Cpe5thyearDataSetSec3 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._sec2TableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._sec2TableAdapter.Connection) == false))) {
+            if (((this._sec3TableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._sec3TableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1279,13 +1332,13 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._sec2TableAdapter != null)) {
-                    revertConnections.Add(this._sec2TableAdapter, this._sec2TableAdapter.Connection);
-                    this._sec2TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._sec2TableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._sec2TableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._sec2TableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._sec2TableAdapter.Adapter);
+                if ((this._sec3TableAdapter != null)) {
+                    revertConnections.Add(this._sec3TableAdapter, this._sec3TableAdapter.Connection);
+                    this._sec3TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._sec3TableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._sec3TableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._sec3TableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._sec3TableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1346,9 +1399,9 @@ namespace CRUD.Cpe5thyearDataSetTableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._sec2TableAdapter != null)) {
-                    this._sec2TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._sec2TableAdapter]));
-                    this._sec2TableAdapter.Transaction = null;
+                if ((this._sec3TableAdapter != null)) {
+                    this._sec3TableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._sec3TableAdapter]));
+                    this._sec3TableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

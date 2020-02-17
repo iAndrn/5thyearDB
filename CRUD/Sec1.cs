@@ -21,8 +21,10 @@ namespace CRUD
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataSetSec1.Sec1' table. You can move, or remove it, as needed.
-            this.sec1TableAdapter.Fill(this.dataSetSec1.Sec1);
+            // TODO: This line of code loads data into the 'cpe5thyearDataSetSec11.Sec1' table. You can move, or remove it, as needed.
+            this.sec1TableAdapter1.Fill(this.cpe5thyearDataSetSec11.Sec1);
+            // TODO: This line of code loads data into the 'cpe5thyearDataSetSec1.Sec1' table. You can move, or remove it, as needed.
+            
 
 
             GetStudentsRecord();
@@ -42,7 +44,10 @@ namespace CRUD
             StudentDataGridView.DataSource = dt;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+
+
+        /*private void button1_Click(object sender, EventArgs e)
         {
             if (IsValid())
             {
@@ -70,7 +75,7 @@ namespace CRUD
             }
             
             return true;
-        }
+        }*/
 
         private void Sec1_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -136,14 +141,29 @@ namespace CRUD
            
         }
 
-        private void StudentDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void contactNum_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void contactNum_TextChanged(object sender, EventArgs e)
+        private void label10_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StudentDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Fname.Text = StudentDataGridView.SelectedRows[0].Cells[1].Value.ToString();
+            Lname.Text = StudentDataGridView.SelectedRows[0].Cells[2].Value.ToString();
+            Mname.Text = StudentDataGridView.SelectedRows[0].Cells[3].Value.ToString();
+            studentNum.Text = StudentDataGridView.SelectedRows[0].Cells[4].Value.ToString();
+            emailAdd.Text = StudentDataGridView.SelectedRows[0].Cells[5].Value.ToString();
+            contactNum.Text = StudentDataGridView.SelectedRows[0].Cells[6].Value.ToString();
         }
     }
 }

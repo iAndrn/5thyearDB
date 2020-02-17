@@ -37,12 +37,19 @@ namespace CRUD
                 }
                 else if (User.Text == "Sec3Admin")
                 {
-                    MessageBox.Show("No Page Yet for Section 3", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Login Succesful Sec3Admin", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    /*Sec3 mm = new Sec3();
+                    this.Hide();
 
+                    mm.Show();*/
                 }
                 else if (User.Text == "Sec4Admin")
                 {
-                    MessageBox.Show("No Page Yet for Section 4", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Login Succesful Sec4Admin", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Sec4 mm = new Sec4();
+                    this.Hide();
+
+                    mm.Show();
 
                 }
                 else if (User.Text == "Sec5Admin")
