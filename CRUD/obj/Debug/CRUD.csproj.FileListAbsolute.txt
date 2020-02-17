@@ -30,3 +30,19 @@ E:\School\5th Yr 2nd Sem\Soft Eng\Project 2 DB\5thyearDB\CRUD\obj\Debug\CRUD.Sec
 E:\School\5th Yr 2nd Sem\Soft Eng\Project 2 DB\5thyearDB\CRUD\obj\Debug\CRUD.csproj.GenerateResource.cache
 E:\School\5th Yr 2nd Sem\Soft Eng\Project 2 DB\5thyearDB\CRUD\obj\Debug\CRUD.exe
 E:\School\5th Yr 2nd Sem\Soft Eng\Project 2 DB\5thyearDB\CRUD\obj\Debug\CRUD.pdb
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\bin\Debug\CRUD.exe.config
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\bin\Debug\CRUD.exe
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\bin\Debug\CRUD.pdb
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\obj\Debug\CRUD.csprojAssemblyReference.cache
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\obj\Debug\CRUD.changePass.resources
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\obj\Debug\CRUD.Sec1.resources
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\obj\Debug\CRUD.Login.resources
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\obj\Debug\CRUD.Properties.Resources.resources
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\obj\Debug\CRUD.Sec2.resources
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\obj\Debug\CRUD.Sec3.resources
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\obj\Debug\CRUD.Sec4.resources
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\obj\Debug\CRUD.Sec5.resources
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\obj\Debug\CRUD.Sec6.resources
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\obj\Debug\CRUD.csproj.GenerateResource.cache
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\obj\Debug\CRUD.exe
+C:\Users\Andreian\Desktop\Soft Engg DB\ChristerBranchDB\CRUD\obj\Debug\CRUD.pdb

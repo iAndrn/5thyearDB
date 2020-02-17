@@ -61,14 +61,16 @@ namespace CRUD
                     mm.Show();
 
                 }
-                else
+                else if (User.Text == "Sec6Admin")
                 {
-                    MessageBox.Show("Login Succesful Sec5Admin", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Login Succesful Sec6Admin", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Sec6 mm = new Sec6();
                     this.Hide();
 
                     mm.Show();
                 }
+                else
+                    MessageBox.Show("Login Succesful SUPERUSER", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
 
