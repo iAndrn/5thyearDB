@@ -337,6 +337,7 @@
             this.StudentDataGridView.Size = new System.Drawing.Size(645, 215);
             this.StudentDataGridView.TabIndex = 68;
             this.StudentDataGridView.VirtualMode = true;
+            this.StudentDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentDataGridView_CellClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
