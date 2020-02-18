@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Mname = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.contactNum = new System.Windows.Forms.TextBox();
@@ -64,6 +64,9 @@
             this.sec6BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cpe5thyearDataSetSec6 = new CRUD.Cpe5thyearDataSetSec6();
             this.sec6TableAdapter = new CRUD.Cpe5thyearDataSetSec6TableAdapters.Sec6TableAdapter();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sec6BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec6)).BeginInit();
@@ -71,11 +74,14 @@
             // 
             // Mname
             // 
-            this.Mname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
+            this.Mname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Mname.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mname.ForeColor = System.Drawing.Color.White;
             this.Mname.Location = new System.Drawing.Point(205, 538);
             this.Mname.Name = "Mname";
             this.Mname.ReadOnly = true;
-            this.Mname.Size = new System.Drawing.Size(301, 31);
+            this.Mname.Size = new System.Drawing.Size(301, 29);
             this.Mname.TabIndex = 89;
             this.Mname.UseWaitCursor = true;
             // 
@@ -83,6 +89,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(69, 547);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(137, 22);
@@ -92,72 +99,89 @@
             // 
             // contactNum
             // 
-            this.contactNum.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
+            this.contactNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.contactNum.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactNum.ForeColor = System.Drawing.Color.White;
             this.contactNum.Location = new System.Drawing.Point(205, 664);
             this.contactNum.Name = "contactNum";
             this.contactNum.ReadOnly = true;
-            this.contactNum.Size = new System.Drawing.Size(301, 31);
+            this.contactNum.Size = new System.Drawing.Size(301, 29);
             this.contactNum.TabIndex = 87;
             this.contactNum.UseWaitCursor = true;
             // 
             // emailAdd
             // 
-            this.emailAdd.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
+            this.emailAdd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.emailAdd.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailAdd.ForeColor = System.Drawing.Color.White;
             this.emailAdd.Location = new System.Drawing.Point(205, 622);
             this.emailAdd.Name = "emailAdd";
             this.emailAdd.ReadOnly = true;
-            this.emailAdd.Size = new System.Drawing.Size(301, 31);
+            this.emailAdd.Size = new System.Drawing.Size(301, 29);
             this.emailAdd.TabIndex = 86;
             this.emailAdd.UseWaitCursor = true;
             // 
             // studentNum
             // 
-            this.studentNum.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
+            this.studentNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.studentNum.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNum.ForeColor = System.Drawing.Color.White;
             this.studentNum.Location = new System.Drawing.Point(205, 580);
             this.studentNum.Name = "studentNum";
             this.studentNum.ReadOnly = true;
-            this.studentNum.Size = new System.Drawing.Size(301, 31);
+            this.studentNum.Size = new System.Drawing.Size(301, 29);
             this.studentNum.TabIndex = 85;
             this.studentNum.UseWaitCursor = true;
             // 
             // Lname
             // 
-            this.Lname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
+            this.Lname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Lname.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lname.ForeColor = System.Drawing.Color.White;
             this.Lname.Location = new System.Drawing.Point(205, 496);
             this.Lname.Name = "Lname";
             this.Lname.ReadOnly = true;
-            this.Lname.Size = new System.Drawing.Size(301, 31);
+            this.Lname.Size = new System.Drawing.Size(301, 29);
             this.Lname.TabIndex = 84;
             this.Lname.UseWaitCursor = true;
             // 
             // Fname
             // 
-            this.Fname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
+            this.Fname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Fname.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fname.ForeColor = System.Drawing.Color.White;
             this.Fname.Location = new System.Drawing.Point(205, 454);
             this.Fname.Name = "Fname";
             this.Fname.ReadOnly = true;
-            this.Fname.Size = new System.Drawing.Size(301, 31);
+            this.Fname.Size = new System.Drawing.Size(301, 29);
             this.Fname.TabIndex = 83;
             this.Fname.UseWaitCursor = true;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(302, 3);
+            this.label11.Font = new System.Drawing.Font("Montserrat Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(218, 9);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(113, 36);
+            this.label11.Size = new System.Drawing.Size(288, 48);
             this.label11.TabIndex = 82;
-            this.label11.Text = "Search";
+            this.label11.Text = "Search Student";
             this.label11.UseWaitCursor = true;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Montserrat Light", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(288, 156);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(140, 36);
+            this.label10.Size = new System.Drawing.Size(149, 40);
             this.label10.TabIndex = 81;
             this.label10.Text = "Class List";
             this.label10.UseWaitCursor = true;
@@ -166,6 +190,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(34, 673);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(172, 22);
@@ -177,6 +202,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(67, 631);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(139, 22);
@@ -188,6 +214,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(40, 589);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(166, 22);
@@ -199,6 +226,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(94, 505);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(112, 22);
@@ -210,6 +238,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(98, 463);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 22);
@@ -220,38 +249,48 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Montserrat Light", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(247, 415);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(222, 36);
+            this.label4.Size = new System.Drawing.Size(242, 40);
             this.label4.TabIndex = 75;
             this.label4.Text = "Student Details";
             this.label4.UseWaitCursor = true;
             // 
             // searchtextstudentNum
             // 
+            this.searchtextstudentNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
+            this.searchtextstudentNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.searchtextstudentNum.Font = new System.Drawing.Font("Arial", 14.25F);
-            this.searchtextstudentNum.Location = new System.Drawing.Point(274, 125);
+            this.searchtextstudentNum.ForeColor = System.Drawing.Color.White;
+            this.searchtextstudentNum.Location = new System.Drawing.Point(513, 68);
             this.searchtextstudentNum.Name = "searchtextstudentNum";
-            this.searchtextstudentNum.Size = new System.Drawing.Size(168, 29);
+            this.searchtextstudentNum.Size = new System.Drawing.Size(168, 22);
             this.searchtextstudentNum.TabIndex = 74;
             this.searchtextstudentNum.TextChanged += new System.EventHandler(this.searchtextstudentNum_TextChanged);
             // 
             // searchTextLname
             // 
+            this.searchTextLname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
+            this.searchTextLname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.searchTextLname.Font = new System.Drawing.Font("Arial", 14.25F);
-            this.searchTextLname.Location = new System.Drawing.Point(274, 82);
+            this.searchTextLname.ForeColor = System.Drawing.Color.White;
+            this.searchTextLname.Location = new System.Drawing.Point(94, 108);
             this.searchTextLname.Name = "searchTextLname";
-            this.searchTextLname.Size = new System.Drawing.Size(168, 29);
+            this.searchTextLname.Size = new System.Drawing.Size(249, 22);
             this.searchTextLname.TabIndex = 73;
             this.searchTextLname.TextChanged += new System.EventHandler(this.searchTextLname_TextChanged);
             // 
             // searchTextFname
             // 
+            this.searchTextFname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
+            this.searchTextFname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.searchTextFname.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchTextFname.Location = new System.Drawing.Point(274, 42);
+            this.searchTextFname.ForeColor = System.Drawing.Color.White;
+            this.searchTextFname.Location = new System.Drawing.Point(94, 68);
             this.searchTextFname.Name = "searchTextFname";
-            this.searchTextFname.Size = new System.Drawing.Size(168, 29);
+            this.searchTextFname.Size = new System.Drawing.Size(249, 22);
             this.searchTextFname.TabIndex = 72;
             this.searchTextFname.TextChanged += new System.EventHandler(this.searchTextFname_TextChanged);
             // 
@@ -259,7 +298,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(202, 132);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(441, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 17);
             this.label3.TabIndex = 71;
@@ -270,7 +310,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(193, 89);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(13, 115);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 17);
             this.label2.TabIndex = 70;
@@ -281,7 +322,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(192, 49);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 17);
             this.label1.TabIndex = 69;
@@ -298,14 +340,14 @@
             this.StudentDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.StudentDataGridView.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.StudentDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.StudentDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StudentDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.StudentDataGridView.ColumnHeadersHeight = 30;
             this.StudentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.StudentDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -317,21 +359,21 @@
             this.emailAddDataGridViewTextBoxColumn,
             this.contactNumDataGridViewTextBoxColumn});
             this.StudentDataGridView.DataSource = this.sec6BindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.StudentDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.StudentDataGridView.DefaultCellStyle = dataGridViewCellStyle5;
             this.StudentDataGridView.Location = new System.Drawing.Point(36, 197);
             this.StudentDataGridView.Margin = new System.Windows.Forms.Padding(0);
             this.StudentDataGridView.Name = "StudentDataGridView";
             this.StudentDataGridView.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.StudentDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.StudentDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.StudentDataGridView.Size = new System.Drawing.Size(645, 215);
@@ -405,11 +447,39 @@
             // 
             this.sec6TableAdapter.ClearBeforeFill = true;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(94, 91);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(249, 1);
+            this.panel1.TabIndex = 90;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(94, 129);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(249, 1);
+            this.panel2.TabIndex = 91;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(513, 89);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(168, 1);
+            this.panel3.TabIndex = 92;
+            // 
             // Sec6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(728, 700);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Mname);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.contactNum);
@@ -432,11 +502,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.StudentDataGridView);
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Sec6";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Section 6";
+            this.Text = "Section 6 Data";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Sec6_FormClosing);
             this.Load += new System.EventHandler(this.Sec6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).EndInit();
@@ -481,5 +553,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn studentNumDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailAddDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn contactNumDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }
