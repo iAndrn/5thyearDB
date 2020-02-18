@@ -267,7 +267,7 @@
             this.emailAdd.Location = new System.Drawing.Point(204, 622);
             this.emailAdd.Name = "emailAdd";
             this.emailAdd.ReadOnly = true;
-            this.emailAdd.Size = new System.Drawing.Size(301, 29);
+            this.emailAdd.Size = new System.Drawing.Size(370, 29);
             this.emailAdd.TabIndex = 107;
             // 
             // studentNum

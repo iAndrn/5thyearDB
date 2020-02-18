@@ -105,7 +105,7 @@
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -374,7 +374,7 @@
             this.emailAdd.Location = new System.Drawing.Point(204, 622);
             this.emailAdd.Name = "emailAdd";
             this.emailAdd.ReadOnly = true;
-            this.emailAdd.Size = new System.Drawing.Size(301, 29);
+            this.emailAdd.Size = new System.Drawing.Size(370, 29);
             this.emailAdd.TabIndex = 65;
             // 
             // studentNum
