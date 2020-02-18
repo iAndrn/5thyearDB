@@ -124,21 +124,61 @@ namespace CRUD
             panel2.BackColor = System.Drawing.Color.White;
         }
 
-        private void User_Click(object sender, EventArgs e)
-        {
-            User.Clear();
-        }
 
-        private void Pass_Click(object sender, EventArgs e)
+/*        private void Pass_TextChanged(object sender, EventArgs e)
         {
-            Pass.Clear();
-        }
-
-        private void Pass_TextChanged(object sender, EventArgs e)
-        {
-            Pass.PasswordChar =  '*';
+            Pass.PasswordChar = '*';
             panel1.BackColor = System.Drawing.Color.White;
             panel2.BackColor = System.Drawing.Color.ForestGreen;
+        }*/
+
+        private void User_Enter(object sender, EventArgs e)
+        {
+            if(User.Text == "Username")
+            {
+                User.ForeColor = System.Drawing.Color.White;
+                User.Text = "";
+                panel1.BackColor = System.Drawing.Color.ForestGreen;
+
+            }
+        }
+
+        private void User_Leave(object sender, EventArgs e)
+        {
+            if (User.Text == "")
+            {
+                User.ForeColor = System.Drawing.Color.DarkGray;
+                User.Text = "Username";
+                panel1.BackColor = System.Drawing.Color.White;
+
+            }
+        }
+
+        private void Pass_Enter(object sender, EventArgs e)
+        {
+            
+            if (Pass.Text == "Password")
+            {
+                panel2.BackColor = System.Drawing.Color.ForestGreen;
+                Pass.ForeColor = System.Drawing.Color.White;
+                Pass.PasswordChar = '*';
+                Pass.Text = "";
+                
+
+            }
+           
+        }
+
+        private void Pass_Leave(object sender, EventArgs e)
+        {
+            if (Pass.Text == "")
+            {
+                panel2.BackColor = System.Drawing.Color.White;
+                Pass.ForeColor = System.Drawing.Color.DarkGray;
+                Pass.PasswordChar = '\u0000';
+                Pass.Text = "Password";
+                
+            }
         }
     }
 }

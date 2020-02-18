@@ -12,6 +12,8 @@ namespace CRUD
 
         private void GlobalDatabase_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'cpe5thyearDataSetGlobalDB.GlobalTable' table. You can move, or remove it, as needed.
+            this.globalTableTableAdapter.Fill(this.cpe5thyearDataSetGlobalDB.GlobalTable);
 
         }
 
@@ -59,6 +61,26 @@ namespace CRUD
             panel2.BackColor = System.Drawing.Color.White;
             panel3.BackColor = System.Drawing.Color.ForestGreen;
             panel4.BackColor = System.Drawing.Color.White;
+        }
+
+        private void sectionNum_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           
+            if (!char.IsDigit(e.KeyChar) && (!char.IsControl(e.KeyChar)))
+            {
+
+                e.Handled = true;
+            }
+        }
+
+
+
+
+        private void GlobalSearch_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            Login mm = new Login();
+            mm.Show();
         }
     }
 }

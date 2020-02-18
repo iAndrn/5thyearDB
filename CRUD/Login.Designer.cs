@@ -49,30 +49,28 @@
             this.User.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
             this.User.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.User.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.User.ForeColor = System.Drawing.Color.White;
+            this.User.ForeColor = System.Drawing.Color.DarkGray;
             this.User.Location = new System.Drawing.Point(90, 279);
             this.User.Name = "User";
             this.User.Size = new System.Drawing.Size(356, 29);
-            this.User.TabIndex = 0;
+            this.User.TabIndex = 98;
             this.User.Text = "Username";
-            this.User.Click += new System.EventHandler(this.User_Click);
-            this.User.TextChanged += new System.EventHandler(this.User_TextChanged);
-            this.User.DoubleClick += new System.EventHandler(this.User_Click);
+            this.User.Enter += new System.EventHandler(this.User_Enter);
+            this.User.Leave += new System.EventHandler(this.User_Leave);
             // 
             // Pass
             // 
             this.Pass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
             this.Pass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Pass.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pass.ForeColor = System.Drawing.Color.White;
+            this.Pass.ForeColor = System.Drawing.Color.DarkGray;
             this.Pass.Location = new System.Drawing.Point(90, 339);
             this.Pass.Name = "Pass";
             this.Pass.Size = new System.Drawing.Size(356, 29);
-            this.Pass.TabIndex = 1;
+            this.Pass.TabIndex = 99;
             this.Pass.Text = "Password";
-            this.Pass.Click += new System.EventHandler(this.Pass_Click);
-            this.Pass.TextChanged += new System.EventHandler(this.Pass_TextChanged);
-            this.Pass.DoubleClick += new System.EventHandler(this.Pass_Click);
+            this.Pass.Enter += new System.EventHandler(this.Pass_Enter);
+            this.Pass.Leave += new System.EventHandler(this.Pass_Leave);
             // 
             // button1
             // 
@@ -81,10 +79,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Montserrat Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(138, 396);
+            this.button1.Location = new System.Drawing.Point(142, 411);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(198, 59);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -100,7 +98,7 @@
             this.button3.Location = new System.Drawing.Point(170, 510);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(134, 30);
-            this.button3.TabIndex = 3;
+            this.button3.TabIndex = 7;
             this.button3.Text = "Change Password";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button2_Click);
@@ -113,7 +111,7 @@
             this.label1.Location = new System.Drawing.Point(44, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(404, 54);
-            this.label1.TabIndex = 4;
+            this.label1.TabIndex = 1;
             this.label1.Text = "CPE 5th Year Database";
             // 
             // button2
@@ -127,7 +125,7 @@
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(134, 30);
-            this.button2.TabIndex = 7;
+            this.button2.TabIndex = 8;
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button3_Click);
@@ -140,7 +138,7 @@
             this.label4.Location = new System.Drawing.Point(127, 103);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(232, 86);
-            this.label4.TabIndex = 8;
+            this.label4.TabIndex = 2;
             this.label4.Text = "Sign In";
             // 
             // label5
@@ -151,7 +149,7 @@
             this.label5.Location = new System.Drawing.Point(115, 189);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(254, 29);
-            this.label5.TabIndex = 9;
+            this.label5.TabIndex = 3;
             this.label5.Text = "Sign in to Your Account";
             // 
             // panel1
@@ -219,7 +217,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Database Manager";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
-            this.Click += new System.EventHandler(this.User_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

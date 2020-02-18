@@ -58,6 +58,11 @@
     <Compile Include="changePass.Designer.cs">
       <DependentUpon>changePass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cpe5thyearDataSetGlobalDB1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cpe5thyearDataSetGlobalDB1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Cpe5thyearDataSetSec1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -175,6 +180,17 @@
     <EmbeddedResource Include="Sec6.resx">
       <DependentUpon>Sec6.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Cpe5thyearDataSetGlobalDB1.xsc">
+      <DependentUpon>Cpe5thyearDataSetGlobalDB1.xsd</DependentUpon>
+    </None>
+    <None Include="Cpe5thyearDataSetGlobalDB1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cpe5thyearDataSetGlobalDB1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cpe5thyearDataSetGlobalDB1.xss">
+      <DependentUpon>Cpe5thyearDataSetGlobalDB1.xsd</DependentUpon>
+    </None>
     <None Include="Cpe5thyearDataSetSec1.xsc">
       <DependentUpon>Cpe5thyearDataSetSec1.xsd</DependentUpon>
     </None>
