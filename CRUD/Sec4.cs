@@ -76,7 +76,7 @@ namespace CRUD
 
         private void searchTextFname_TextChanged(object sender, EventArgs e)
         {
-            searchLname(searchTextLname.Text);
+            searchFname(searchTextFname.Text);
         }
 
         private void searchTextLname_TextChanged(object sender, EventArgs e)

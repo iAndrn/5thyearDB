@@ -62,3 +62,4 @@ C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\obj\Debug\CRUD.Sec6.reso
 C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\obj\Debug\CRUD.csproj.GenerateResource.cache
 C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\obj\Debug\CRUD.exe
 C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\obj\Debug\CRUD.pdb
+C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\obj\Debug\CRUD.GlobalSearch.resources

@@ -42,7 +42,6 @@
             this.contactNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sec1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.cpe5thyearDataSetSec11 = new CRUD.Cpe5thyearDataSetSec1();
-            this.sec1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -68,6 +67,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
+            this.sec1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sec1BindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec11)).BeginInit();
@@ -187,10 +187,6 @@
             // 
             this.cpe5thyearDataSetSec11.DataSetName = "Cpe5thyearDataSetSec1";
             this.cpe5thyearDataSetSec11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sec1BindingSource
-            // 
-            this.sec1BindingSource.DataMember = "Sec1";
             // 
             // label1
             // 
@@ -328,7 +324,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Montserrat Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.ForeColor = System.Drawing.Color.Orange;
             this.label11.Location = new System.Drawing.Point(223, 3);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(288, 48);
@@ -464,6 +460,10 @@
             this.label9.Size = new System.Drawing.Size(93, 22);
             this.label9.TabIndex = 49;
             this.label9.Text = "Contact:";
+            // 
+            // sec1BindingSource
+            // 
+            this.sec1BindingSource.DataMember = "Sec1";
             // 
             // Sec1
             // 

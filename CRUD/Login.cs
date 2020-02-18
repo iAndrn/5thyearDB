@@ -70,7 +70,14 @@ namespace CRUD
                     mm.Show();
                 }
                 else
-                    MessageBox.Show("Login Succesful SUPERUSER", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                {
+                    MessageBox.Show("Login Succesful GlobalAdmin", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    GlobalSearch mm = new GlobalSearch();
+                    this.Hide();
+
+                    mm.Show();
+                }
+                    
 
 
 
@@ -129,7 +136,7 @@ namespace CRUD
 
         private void Pass_TextChanged(object sender, EventArgs e)
         {
-            Pass.PasswordChar = '*' ;
+            Pass.PasswordChar =  '*';
             panel1.BackColor = System.Drawing.Color.White;
             panel2.BackColor = System.Drawing.Color.ForestGreen;
         }

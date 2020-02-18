@@ -88,6 +88,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Cpe5thyearDataSetSec6.xsd</DependentUpon>
     </Compile>
+    <Compile Include="GlobalSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalSearch.Designer.cs">
+      <DependentUpon>GlobalSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sec1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </Compile>
     <EmbeddedResource Include="changePass.resx">
       <DependentUpon>changePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalSearch.resx">
+      <DependentUpon>GlobalSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sec1.resx">
       <DependentUpon>Sec1.cs</DependentUpon>

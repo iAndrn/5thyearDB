@@ -76,7 +76,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Montserrat Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.ForeColor = System.Drawing.Color.Orange;
             this.label11.Location = new System.Drawing.Point(223, 3);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(288, 48);
