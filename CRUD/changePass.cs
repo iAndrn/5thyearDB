@@ -40,7 +40,7 @@ namespace CRUD
                     conn.Close();
 
                    MessageBox.Show("Successfully Changed Admins Password", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                   MessageBox.Show("Exit Window to Return to Login", "Return", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
                    
                    returnPage();
 

@@ -7,7 +7,7 @@
     <ProjectGuid>{70F2B5D7-C3B1-4DD4-88C1-CC09E5FE9C85}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>CRUD</RootNamespace>
-    <AssemblyName>CRUD</AssemblyName>
+    <AssemblyName>5thyearDB</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,10 @@
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>CRUD.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>database-5-32.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
@@ -275,6 +279,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-lock-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Blackvariant-Button-Ui-Microsoft-Office-Apps-Microsoft-DataBase-Demon.ico" />
+    <Content Include="database-128.ico" />
+    <Content Include="database-5-32.ico" />
+    <Content Include="database-5-512.ico" />
+    <Content Include="database-512.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

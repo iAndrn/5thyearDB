@@ -180,5 +180,10 @@ namespace CRUD
                 
             }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
