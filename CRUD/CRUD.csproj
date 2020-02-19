@@ -117,11 +117,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sec1Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sec1Update.Designer.cs">
+      <DependentUpon>Sec1Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sec2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Sec2.Designer.cs">
       <DependentUpon>Sec2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sec2Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sec2Update.Designer.cs">
+      <DependentUpon>Sec2Update.cs</DependentUpon>
     </Compile>
     <Compile Include="Sec3.cs">
       <SubType>Form</SubType>
@@ -129,11 +141,23 @@
     <Compile Include="Sec3.Designer.cs">
       <DependentUpon>Sec3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sec3Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sec3Update.Designer.cs">
+      <DependentUpon>Sec3Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sec4.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Sec4.Designer.cs">
       <DependentUpon>Sec4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sec4Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sec4Update.Designer.cs">
+      <DependentUpon>Sec4Update.cs</DependentUpon>
     </Compile>
     <Compile Include="Sec5.cs">
       <SubType>Form</SubType>
@@ -141,11 +165,29 @@
     <Compile Include="Sec5.Designer.cs">
       <DependentUpon>Sec5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sec5Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sec5Update.Designer.cs">
+      <DependentUpon>Sec5Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sec6.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Sec6.Designer.cs">
       <DependentUpon>Sec6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sec6Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sec6Update.Designer.cs">
+      <DependentUpon>Sec6Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateLogin.Designer.cs">
+      <DependentUpon>UpdateLogin.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="changePass.resx">
       <DependentUpon>changePass.cs</DependentUpon>
@@ -169,20 +211,41 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sec1Update.resx">
+      <DependentUpon>Sec1Update.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sec2.resx">
       <DependentUpon>Sec2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sec2Update.resx">
+      <DependentUpon>Sec2Update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sec3.resx">
       <DependentUpon>Sec3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sec3Update.resx">
+      <DependentUpon>Sec3Update.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sec4.resx">
       <DependentUpon>Sec4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sec4Update.resx">
+      <DependentUpon>Sec4Update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sec5.resx">
       <DependentUpon>Sec5.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sec5Update.resx">
+      <DependentUpon>Sec5Update.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sec6.resx">
       <DependentUpon>Sec6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sec6Update.resx">
+      <DependentUpon>Sec6Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateLogin.resx">
+      <DependentUpon>UpdateLogin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Cpe5thyearDataSetGlobalDB1.xsc">
       <DependentUpon>Cpe5thyearDataSetGlobalDB1.xsd</DependentUpon>

@@ -63,3 +63,10 @@ C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\bin\Debug\5thyearDB.exe
 C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\bin\Debug\5thyearDB.pdb
 C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\obj\Debug\5thyearDB.exe
 C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\obj\Debug\5thyearDB.pdb
+C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\obj\Debug\CRUD.Sec1Update.resources
+C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\obj\Debug\CRUD.Sec2Update.resources
+C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\obj\Debug\CRUD.Sec3Update.resources
+C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\obj\Debug\CRUD.Sec4Update.resources
+C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\obj\Debug\CRUD.Sec5Update.resources
+C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\obj\Debug\CRUD.Sec6Update.resources
+C:\Users\Andreian\Desktop\5thyearDB-ChristerBranch\CRUD\obj\Debug\CRUD.UpdateLogin.resources

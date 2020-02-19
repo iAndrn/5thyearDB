@@ -266,7 +266,7 @@
             this.contactNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.contactNum.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactNum.ForeColor = System.Drawing.Color.White;
-            this.contactNum.Location = new System.Drawing.Point(205, 664);
+            this.contactNum.Location = new System.Drawing.Point(205, 663);
             this.contactNum.Name = "contactNum";
             this.contactNum.ReadOnly = true;
             this.contactNum.Size = new System.Drawing.Size(301, 29);
@@ -278,7 +278,7 @@
             this.emailAdd.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.emailAdd.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailAdd.ForeColor = System.Drawing.Color.White;
-            this.emailAdd.Location = new System.Drawing.Point(205, 622);
+            this.emailAdd.Location = new System.Drawing.Point(205, 621);
             this.emailAdd.Name = "emailAdd";
             this.emailAdd.ReadOnly = true;
             this.emailAdd.Size = new System.Drawing.Size(370, 29);
@@ -290,7 +290,7 @@
             this.studentNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.studentNum.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentNum.ForeColor = System.Drawing.Color.White;
-            this.studentNum.Location = new System.Drawing.Point(205, 580);
+            this.studentNum.Location = new System.Drawing.Point(205, 579);
             this.studentNum.Name = "studentNum";
             this.studentNum.ReadOnly = true;
             this.studentNum.Size = new System.Drawing.Size(301, 29);
@@ -302,7 +302,7 @@
             this.Lname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Lname.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lname.ForeColor = System.Drawing.Color.White;
-            this.Lname.Location = new System.Drawing.Point(205, 496);
+            this.Lname.Location = new System.Drawing.Point(205, 495);
             this.Lname.Name = "Lname";
             this.Lname.ReadOnly = true;
             this.Lname.Size = new System.Drawing.Size(301, 29);
@@ -314,7 +314,7 @@
             this.Fname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Fname.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fname.ForeColor = System.Drawing.Color.White;
-            this.Fname.Location = new System.Drawing.Point(205, 454);
+            this.Fname.Location = new System.Drawing.Point(205, 453);
             this.Fname.Name = "Fname";
             this.Fname.ReadOnly = true;
             this.Fname.Size = new System.Drawing.Size(301, 29);
@@ -348,7 +348,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(68, 626);
+            this.label8.Location = new System.Drawing.Point(68, 625);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(139, 22);
             this.label8.TabIndex = 35;
@@ -359,7 +359,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(41, 584);
+            this.label7.Location = new System.Drawing.Point(41, 583);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(166, 22);
             this.label7.TabIndex = 34;
@@ -370,7 +370,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(94, 500);
+            this.label6.Location = new System.Drawing.Point(94, 499);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(112, 22);
             this.label6.TabIndex = 33;
@@ -381,7 +381,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(98, 458);
+            this.label5.Location = new System.Drawing.Point(98, 457);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 22);
             this.label5.TabIndex = 32;
@@ -392,7 +392,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Montserrat Light", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(247, 407);
+            this.label4.Location = new System.Drawing.Point(247, 406);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(242, 40);
             this.label4.TabIndex = 31;
@@ -405,7 +405,7 @@
             this.Mname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Mname.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mname.ForeColor = System.Drawing.Color.White;
-            this.Mname.Location = new System.Drawing.Point(205, 538);
+            this.Mname.Location = new System.Drawing.Point(205, 537);
             this.Mname.Name = "Mname";
             this.Mname.ReadOnly = true;
             this.Mname.Size = new System.Drawing.Size(301, 29);
@@ -416,7 +416,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(69, 542);
+            this.label12.Location = new System.Drawing.Point(69, 541);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(137, 22);
             this.label12.TabIndex = 44;
@@ -455,7 +455,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(106, 668);
+            this.label9.Location = new System.Drawing.Point(106, 667);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(93, 22);
             this.label9.TabIndex = 49;

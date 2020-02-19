@@ -13,10 +13,10 @@ namespace CRUD
         SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-4B08G427\SQLEXPRESS;Initial Catalog=Cpe5thyear;Integrated Security=True");
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM admin WHERE adminUser ='"+User.Text+"' and adminPass='"+Pass.Text+"'",conn);
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM admin WHERE adminUser ='" + User.Text + "' and adminPass='" + Pass.Text + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            if(dt.Rows[0][0].ToString()=="1")
+            if (dt.Rows[0][0].ToString() == "1")
             {
 
                 if (User.Text == "Sec1Admin")
@@ -24,10 +24,11 @@ namespace CRUD
                     MessageBox.Show("Login Succesful Sec1Admin", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Sec1 mm = new Sec1();
                     this.Hide();
-                    
+
                     mm.Show();
                 }
-                else if (User.Text == "Sec2Admin") {
+                else if (User.Text == "Sec2Admin")
+                {
                     MessageBox.Show("Login Succesful Sec2Admin", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Sec2 mm = new Sec2();
                     this.Hide();
@@ -73,11 +74,12 @@ namespace CRUD
                 {
                     MessageBox.Show("Login Succesful GlobalAdmin", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     GlobalSearch mm = new GlobalSearch();
+                    /*Sec6Update mm = new Sec6Update();*/
                     this.Hide();
 
                     mm.Show();
                 }
-                    
+
 
 
 
@@ -86,8 +88,9 @@ namespace CRUD
             else
             {
                 MessageBox.Show("Enter Correct Details", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                placeHolder();
             }
-           
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -125,16 +128,16 @@ namespace CRUD
         }
 
 
-/*        private void Pass_TextChanged(object sender, EventArgs e)
-        {
-            Pass.PasswordChar = '*';
-            panel1.BackColor = System.Drawing.Color.White;
-            panel2.BackColor = System.Drawing.Color.ForestGreen;
-        }*/
+        /*        private void Pass_TextChanged(object sender, EventArgs e)
+                {
+                    Pass.PasswordChar = '*';
+                    panel1.BackColor = System.Drawing.Color.White;
+                    panel2.BackColor = System.Drawing.Color.ForestGreen;
+                }*/
 
         private void User_Enter(object sender, EventArgs e)
         {
-            if(User.Text == "Username")
+            if (User.Text == "Username")
             {
                 User.ForeColor = System.Drawing.Color.White;
                 User.Text = "";
@@ -156,17 +159,17 @@ namespace CRUD
 
         private void Pass_Enter(object sender, EventArgs e)
         {
-            
+
             if (Pass.Text == "Password")
             {
                 panel2.BackColor = System.Drawing.Color.ForestGreen;
                 Pass.ForeColor = System.Drawing.Color.White;
                 Pass.PasswordChar = '*';
                 Pass.Text = "";
-                
+
 
             }
-           
+
         }
 
         private void Pass_Leave(object sender, EventArgs e)
@@ -177,13 +180,65 @@ namespace CRUD
                 Pass.ForeColor = System.Drawing.Color.DarkGray;
                 Pass.PasswordChar = '\u0000';
                 Pass.Text = "Password";
-                
+
             }
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Updatebtn_Click(object sender, EventArgs e)
+        {
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM admin WHERE adminUser ='" + User.Text + "' and adminPass='" + Pass.Text + "'", conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            if (dt.Rows[0][0].ToString() == "1")
+            {
+                if (User.Text == "GlobalAdmin")
+                {
+                    MessageBox.Show("Login Successful GlobalAdmin", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    UpdateLogin mm = new UpdateLogin();
+                    this.Hide();
+                    mm.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("Only Global Admin can UPDATE", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    placeHolder();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Only Global Admin can UPDATE", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                placeHolder();
+            }
+
+        }
+
+        private void placeHolder()
+        {
+            User.Clear();
+            Pass.Clear();
+            if (User.Text == "")
+            {
+
+                User.Text = "Username";
+                User.ForeColor = System.Drawing.Color.DarkGray;
+                panel1.BackColor = System.Drawing.Color.White;
+
+            }
+            if (Pass.Text == "")
+            {
+
+                Pass.Text = "Password";
+                Pass.ForeColor = System.Drawing.Color.DarkGray;
+                panel2.BackColor = System.Drawing.Color.White;
+                Pass.PasswordChar = '\u0000';
+
+            }
         }
     }
 }
