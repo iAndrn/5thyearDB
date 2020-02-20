@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -44,6 +44,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.StudentDataGridView = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.middleNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailAddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contactNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sec4BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cpe5thyearDataSetSec4 = new CRUD.Cpe5thyearDataSetSec4();
             this.updateBtn = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.Mname = new System.Windows.Forms.TextBox();
@@ -58,19 +67,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.cpe5thyearDataSetSec4 = new CRUD.Cpe5thyearDataSetSec4();
-            this.sec4BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sec4TableAdapter = new CRUD.Cpe5thyearDataSetSec4TableAdapters.Sec4TableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.middleNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.studentNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailAddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contactNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deleteBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sec4BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -203,14 +204,14 @@
             this.StudentDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.StudentDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.StudentDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.StudentDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StudentDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.StudentDataGridView.ColumnHeadersHeight = 30;
             this.StudentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.StudentDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -222,27 +223,89 @@
             this.emailAddDataGridViewTextBoxColumn,
             this.contactNumDataGridViewTextBoxColumn});
             this.StudentDataGridView.DataSource = this.sec4BindingSource;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.StudentDataGridView.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.StudentDataGridView.DefaultCellStyle = dataGridViewCellStyle5;
             this.StudentDataGridView.Location = new System.Drawing.Point(45, 190);
             this.StudentDataGridView.Margin = new System.Windows.Forms.Padding(0);
             this.StudentDataGridView.Name = "StudentDataGridView";
             this.StudentDataGridView.ReadOnly = true;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.StudentDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.StudentDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.StudentDataGridView.Size = new System.Drawing.Size(645, 158);
             this.StudentDataGridView.TabIndex = 79;
             this.StudentDataGridView.VirtualMode = true;
             this.StudentDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentDataGridView_CellClick);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            this.lastNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // middleNameDataGridViewTextBoxColumn
+            // 
+            this.middleNameDataGridViewTextBoxColumn.DataPropertyName = "MiddleName";
+            this.middleNameDataGridViewTextBoxColumn.HeaderText = "MiddleName";
+            this.middleNameDataGridViewTextBoxColumn.Name = "middleNameDataGridViewTextBoxColumn";
+            this.middleNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.middleNameDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // studentNumDataGridViewTextBoxColumn
+            // 
+            this.studentNumDataGridViewTextBoxColumn.DataPropertyName = "StudentNum";
+            this.studentNumDataGridViewTextBoxColumn.HeaderText = "Student Number";
+            this.studentNumDataGridViewTextBoxColumn.Name = "studentNumDataGridViewTextBoxColumn";
+            this.studentNumDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // emailAddDataGridViewTextBoxColumn
+            // 
+            this.emailAddDataGridViewTextBoxColumn.DataPropertyName = "emailAdd";
+            this.emailAddDataGridViewTextBoxColumn.HeaderText = "emailAdd";
+            this.emailAddDataGridViewTextBoxColumn.Name = "emailAddDataGridViewTextBoxColumn";
+            this.emailAddDataGridViewTextBoxColumn.ReadOnly = true;
+            this.emailAddDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // contactNumDataGridViewTextBoxColumn
+            // 
+            this.contactNumDataGridViewTextBoxColumn.DataPropertyName = "contactNum";
+            this.contactNumDataGridViewTextBoxColumn.HeaderText = "contactNum";
+            this.contactNumDataGridViewTextBoxColumn.Name = "contactNumDataGridViewTextBoxColumn";
+            this.contactNumDataGridViewTextBoxColumn.ReadOnly = true;
+            this.contactNumDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // sec4BindingSource
+            // 
+            this.sec4BindingSource.DataMember = "Sec4";
+            this.sec4BindingSource.DataSource = this.cpe5thyearDataSetSec4;
+            // 
+            // cpe5thyearDataSetSec4
+            // 
+            this.cpe5thyearDataSetSec4.DataSetName = "Cpe5thyearDataSetSec4";
+            this.cpe5thyearDataSetSec4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // updateBtn
             // 
@@ -251,7 +314,7 @@
             this.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.updateBtn.Font = new System.Drawing.Font("Montserrat Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBtn.ForeColor = System.Drawing.Color.White;
-            this.updateBtn.Location = new System.Drawing.Point(291, 652);
+            this.updateBtn.Location = new System.Drawing.Point(225, 652);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(133, 36);
             this.updateBtn.TabIndex = 101;
@@ -409,71 +472,24 @@
             this.label11.TabIndex = 88;
             this.label11.Text = "Student Details";
             // 
-            // cpe5thyearDataSetSec4
-            // 
-            this.cpe5thyearDataSetSec4.DataSetName = "Cpe5thyearDataSetSec4";
-            this.cpe5thyearDataSetSec4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sec4BindingSource
-            // 
-            this.sec4BindingSource.DataMember = "Sec4";
-            this.sec4BindingSource.DataSource = this.cpe5thyearDataSetSec4;
-            // 
             // sec4TableAdapter
             // 
             this.sec4TableAdapter.ClearBeforeFill = true;
             // 
-            // idDataGridViewTextBoxColumn
+            // deleteBtn
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // firstNameDataGridViewTextBoxColumn
-            // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            this.lastNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // middleNameDataGridViewTextBoxColumn
-            // 
-            this.middleNameDataGridViewTextBoxColumn.DataPropertyName = "MiddleName";
-            this.middleNameDataGridViewTextBoxColumn.HeaderText = "MiddleName";
-            this.middleNameDataGridViewTextBoxColumn.Name = "middleNameDataGridViewTextBoxColumn";
-            this.middleNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.middleNameDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // studentNumDataGridViewTextBoxColumn
-            // 
-            this.studentNumDataGridViewTextBoxColumn.DataPropertyName = "StudentNum";
-            this.studentNumDataGridViewTextBoxColumn.HeaderText = "Student Number";
-            this.studentNumDataGridViewTextBoxColumn.Name = "studentNumDataGridViewTextBoxColumn";
-            this.studentNumDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // emailAddDataGridViewTextBoxColumn
-            // 
-            this.emailAddDataGridViewTextBoxColumn.DataPropertyName = "emailAdd";
-            this.emailAddDataGridViewTextBoxColumn.HeaderText = "emailAdd";
-            this.emailAddDataGridViewTextBoxColumn.Name = "emailAddDataGridViewTextBoxColumn";
-            this.emailAddDataGridViewTextBoxColumn.ReadOnly = true;
-            this.emailAddDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // contactNumDataGridViewTextBoxColumn
-            // 
-            this.contactNumDataGridViewTextBoxColumn.DataPropertyName = "contactNum";
-            this.contactNumDataGridViewTextBoxColumn.HeaderText = "contactNum";
-            this.contactNumDataGridViewTextBoxColumn.Name = "contactNumDataGridViewTextBoxColumn";
-            this.contactNumDataGridViewTextBoxColumn.ReadOnly = true;
-            this.contactNumDataGridViewTextBoxColumn.Visible = false;
+            this.deleteBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
+            this.deleteBtn.FlatAppearance.BorderSize = 0;
+            this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.deleteBtn.Font = new System.Drawing.Font("Montserrat Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteBtn.ForeColor = System.Drawing.Color.White;
+            this.deleteBtn.Location = new System.Drawing.Point(382, 652);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(133, 36);
+            this.deleteBtn.TabIndex = 131;
+            this.deleteBtn.Text = "Delete";
+            this.deleteBtn.UseVisualStyleBackColor = false;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
             // Sec4Update
             // 
@@ -481,6 +497,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(728, 700);
+            this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.Mname);
@@ -515,8 +532,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Sec4Update_FormClosing);
             this.Load += new System.EventHandler(this.Sec4Update_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sec4BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -560,5 +577,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn studentNumDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailAddDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn contactNumDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button deleteBtn;
     }
 }

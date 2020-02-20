@@ -67,6 +67,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Cpe5thyearDataSetGlobalDB1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Cpe5thyearDataSetGlobalSearch.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cpe5thyearDataSetGlobalSearch.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Cpe5thyearDataSetSec1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -257,6 +262,17 @@
     </None>
     <None Include="Cpe5thyearDataSetGlobalDB1.xss">
       <DependentUpon>Cpe5thyearDataSetGlobalDB1.xsd</DependentUpon>
+    </None>
+    <None Include="Cpe5thyearDataSetGlobalSearch.xsc">
+      <DependentUpon>Cpe5thyearDataSetGlobalSearch.xsd</DependentUpon>
+    </None>
+    <None Include="Cpe5thyearDataSetGlobalSearch.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cpe5thyearDataSetGlobalSearch.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cpe5thyearDataSetGlobalSearch.xss">
+      <DependentUpon>Cpe5thyearDataSetGlobalSearch.xsd</DependentUpon>
     </None>
     <None Include="Cpe5thyearDataSetSec1.xsc">
       <DependentUpon>Cpe5thyearDataSetSec1.xsd</DependentUpon>

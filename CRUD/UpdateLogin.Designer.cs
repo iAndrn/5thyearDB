@@ -45,6 +45,7 @@
             this.Section3blk = new System.Windows.Forms.Button();
             this.Section2blk = new System.Windows.Forms.Button();
             this.Section1blk = new System.Windows.Forms.Button();
+            this.overAll = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -211,6 +212,7 @@
             this.Section6blk.TabIndex = 145;
             this.Section6blk.Text = "Section 6";
             this.Section6blk.UseVisualStyleBackColor = false;
+            this.Section6blk.Click += new System.EventHandler(this.Section6blk_Click);
             // 
             // Section5blk
             // 
@@ -225,6 +227,7 @@
             this.Section5blk.TabIndex = 144;
             this.Section5blk.Text = "Section 5";
             this.Section5blk.UseVisualStyleBackColor = false;
+            this.Section5blk.Click += new System.EventHandler(this.Section5blk_Click);
             // 
             // Section4blk
             // 
@@ -239,6 +242,7 @@
             this.Section4blk.TabIndex = 143;
             this.Section4blk.Text = "Section 4";
             this.Section4blk.UseVisualStyleBackColor = false;
+            this.Section4blk.Click += new System.EventHandler(this.Section4blk_Click);
             // 
             // Section3blk
             // 
@@ -253,6 +257,7 @@
             this.Section3blk.TabIndex = 142;
             this.Section3blk.Text = "Section 3";
             this.Section3blk.UseVisualStyleBackColor = false;
+            this.Section3blk.Click += new System.EventHandler(this.Section3blk_Click);
             // 
             // Section2blk
             // 
@@ -267,6 +272,7 @@
             this.Section2blk.TabIndex = 141;
             this.Section2blk.Text = "Section 2";
             this.Section2blk.UseVisualStyleBackColor = false;
+            this.Section2blk.Click += new System.EventHandler(this.Section2blk_Click);
             // 
             // Section1blk
             // 
@@ -283,12 +289,28 @@
             this.Section1blk.UseVisualStyleBackColor = false;
             this.Section1blk.Click += new System.EventHandler(this.Section1blk_Click);
             // 
+            // overAll
+            // 
+            this.overAll.BackColor = System.Drawing.Color.OrangeRed;
+            this.overAll.FlatAppearance.BorderSize = 0;
+            this.overAll.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.overAll.Font = new System.Drawing.Font("Montserrat Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.overAll.ForeColor = System.Drawing.Color.White;
+            this.overAll.Location = new System.Drawing.Point(168, 459);
+            this.overAll.Name = "overAll";
+            this.overAll.Size = new System.Drawing.Size(146, 44);
+            this.overAll.TabIndex = 146;
+            this.overAll.Text = "OVERALL";
+            this.overAll.UseVisualStyleBackColor = false;
+            this.overAll.Click += new System.EventHandler(this.overAll_Click);
+            // 
             // UpdateLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(483, 603);
+            this.Controls.Add(this.overAll);
             this.Controls.Add(this.Section6blk);
             this.Controls.Add(this.Section5blk);
             this.Controls.Add(this.Section4blk);
@@ -310,6 +332,7 @@
             this.MaximizeBox = false;
             this.Name = "UpdateLogin";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select Section";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateLogin_FormClosing);
             this.ResumeLayout(false);
@@ -336,5 +359,6 @@
         private System.Windows.Forms.Button Section3blk;
         private System.Windows.Forms.Button Section2blk;
         private System.Windows.Forms.Button Section1blk;
+        private System.Windows.Forms.Button overAll;
     }
 }

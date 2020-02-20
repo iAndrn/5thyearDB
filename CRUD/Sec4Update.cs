@@ -34,7 +34,7 @@ namespace CRUD
         private void Sec4Update_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
-            Login mm = new Login();
+            UpdateLogin mm = new UpdateLogin();
             mm.Show();
         }
 
@@ -136,6 +136,38 @@ namespace CRUD
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            if (ID > 0)
+            {
+
+                Fname.Clear();
+                Lname.Clear();
+                Mname.Clear();
+                studentNum.Clear();
+                emailAdd.Clear();
+                contactNum.Clear();
+                SqlCommand cmd = new SqlCommand("UPDATE Sec4 SET FirstName = @FirstName, LastName = @LastName, MiddleName = @MiddleName, StudentNum =  @StudentNum,emailAdd = @emailAdd,contactNum = @contactNum WHERE id = @ID", conn);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.AddWithValue("@FirstName", Fname.Text);
+                cmd.Parameters.AddWithValue("@LastName", Lname.Text);
+                cmd.Parameters.AddWithValue("@MiddleName", Mname.Text);
+                cmd.Parameters.AddWithValue("@StudentNum", studentNum.Text);
+                cmd.Parameters.AddWithValue("@emailAdd", emailAdd.Text);
+                cmd.Parameters.AddWithValue("@contactNum", contactNum.Text);
+
+                cmd.Parameters.AddWithValue("@ID", this.ID);
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                MessageBox.Show("Deleted Student Information", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                GetStudentsRecord();
+
+
+                ID = 0;
             }
         }
     }

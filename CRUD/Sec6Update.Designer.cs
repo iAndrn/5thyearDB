@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,10 +43,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.StudentDataGridView = new System.Windows.Forms.DataGridView();
-            this.label10 = new System.Windows.Forms.Label();
-            this.cpe5thyearDataSetSec6 = new CRUD.Cpe5thyearDataSetSec6();
-            this.sec6BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sec6TableAdapter = new CRUD.Cpe5thyearDataSetSec6TableAdapters.Sec6TableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +50,10 @@
             this.studentNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailAddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contactNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sec6BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cpe5thyearDataSetSec6 = new CRUD.Cpe5thyearDataSetSec6();
+            this.label10 = new System.Windows.Forms.Label();
+            this.sec6TableAdapter = new CRUD.Cpe5thyearDataSetSec6TableAdapters.Sec6TableAdapter();
             this.updateBtn = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.Mname = new System.Windows.Forms.TextBox();
@@ -68,9 +68,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.deleteBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sec6BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec6)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -192,14 +193,14 @@
             this.StudentDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.StudentDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.StudentDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.StudentDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StudentDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.StudentDataGridView.ColumnHeadersHeight = 30;
             this.StudentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.StudentDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -211,52 +212,27 @@
             this.emailAddDataGridViewTextBoxColumn,
             this.contactNumDataGridViewTextBoxColumn});
             this.StudentDataGridView.DataSource = this.sec6BindingSource;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.StudentDataGridView.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.StudentDataGridView.DefaultCellStyle = dataGridViewCellStyle5;
             this.StudentDataGridView.Location = new System.Drawing.Point(45, 190);
             this.StudentDataGridView.Margin = new System.Windows.Forms.Padding(0);
             this.StudentDataGridView.Name = "StudentDataGridView";
             this.StudentDataGridView.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.StudentDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.StudentDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.StudentDataGridView.Size = new System.Drawing.Size(645, 158);
             this.StudentDataGridView.TabIndex = 97;
             this.StudentDataGridView.VirtualMode = true;
             this.StudentDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentDataGridView_CellClick);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Montserrat Light", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(293, 148);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(149, 40);
-            this.label10.TabIndex = 96;
-            this.label10.Text = "Class List";
-            // 
-            // cpe5thyearDataSetSec6
-            // 
-            this.cpe5thyearDataSetSec6.DataSetName = "Cpe5thyearDataSetSec6";
-            this.cpe5thyearDataSetSec6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sec6BindingSource
-            // 
-            this.sec6BindingSource.DataMember = "Sec6";
-            this.sec6BindingSource.DataSource = this.cpe5thyearDataSetSec6;
-            // 
-            // sec6TableAdapter
-            // 
-            this.sec6TableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -310,6 +286,31 @@
             this.contactNumDataGridViewTextBoxColumn.ReadOnly = true;
             this.contactNumDataGridViewTextBoxColumn.Visible = false;
             // 
+            // sec6BindingSource
+            // 
+            this.sec6BindingSource.DataMember = "Sec6";
+            this.sec6BindingSource.DataSource = this.cpe5thyearDataSetSec6;
+            // 
+            // cpe5thyearDataSetSec6
+            // 
+            this.cpe5thyearDataSetSec6.DataSetName = "Cpe5thyearDataSetSec6";
+            this.cpe5thyearDataSetSec6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Montserrat Light", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(293, 148);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(149, 40);
+            this.label10.TabIndex = 96;
+            this.label10.Text = "Class List";
+            // 
+            // sec6TableAdapter
+            // 
+            this.sec6TableAdapter.ClearBeforeFill = true;
+            // 
             // updateBtn
             // 
             this.updateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
@@ -317,7 +318,7 @@
             this.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.updateBtn.Font = new System.Drawing.Font("Montserrat Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBtn.ForeColor = System.Drawing.Color.White;
-            this.updateBtn.Location = new System.Drawing.Point(291, 652);
+            this.updateBtn.Location = new System.Drawing.Point(225, 652);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(133, 36);
             this.updateBtn.TabIndex = 129;
@@ -475,12 +476,28 @@
             this.label11.TabIndex = 116;
             this.label11.Text = "Student Details";
             // 
+            // deleteBtn
+            // 
+            this.deleteBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(174)))), ((int)(((byte)(208)))));
+            this.deleteBtn.FlatAppearance.BorderSize = 0;
+            this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.deleteBtn.Font = new System.Drawing.Font("Montserrat Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteBtn.ForeColor = System.Drawing.Color.White;
+            this.deleteBtn.Location = new System.Drawing.Point(382, 652);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(133, 36);
+            this.deleteBtn.TabIndex = 130;
+            this.deleteBtn.Text = "Delete";
+            this.deleteBtn.UseVisualStyleBackColor = false;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
+            // 
             // Sec6Update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(36)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(728, 700);
+            this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.Mname);
@@ -516,8 +533,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Sec6Update_FormClosing);
             this.Load += new System.EventHandler(this.Sec6Update_Load);
             ((System.ComponentModel.ISupportInitialize)(this.StudentDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sec6BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpe5thyearDataSetSec6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -561,5 +578,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button deleteBtn;
     }
 }

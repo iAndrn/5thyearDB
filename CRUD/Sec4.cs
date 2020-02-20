@@ -69,9 +69,11 @@ namespace CRUD
         {
             Fname.Text = StudentDataGridView.SelectedRows[0].Cells[1].Value.ToString();
             Lname.Text = StudentDataGridView.SelectedRows[0].Cells[2].Value.ToString();
-            studentNum.Text = StudentDataGridView.SelectedRows[0].Cells[3].Value.ToString();
-            emailAdd.Text = StudentDataGridView.SelectedRows[0].Cells[4].Value.ToString();
-            contactNum.Text = StudentDataGridView.SelectedRows[0].Cells[5].Value.ToString();
+            Mname.Text = StudentDataGridView.SelectedRows[0].Cells[3].Value.ToString();
+            studentNum.Text = StudentDataGridView.SelectedRows[0].Cells[4].Value.ToString();
+            
+            emailAdd.Text = StudentDataGridView.SelectedRows[0].Cells[5].Value.ToString();
+            contactNum.Text = StudentDataGridView.SelectedRows[0].Cells[6].Value.ToString();
         }
 
         private void searchTextFname_TextChanged(object sender, EventArgs e)
